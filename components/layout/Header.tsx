@@ -12,10 +12,10 @@ export default function Header() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Función para renderizar el enlace correcto
+
   const renderNavItem = (href: string, label: string) => {
     if (href.endsWith(".pdf")) {
-      // Enlace al PDF (usa <a>)
+
       return (
         <a
           href={href}
@@ -28,7 +28,7 @@ export default function Header() {
       );
     }
 
-    // Para rutas internas, usamos <Link>
+
     return (
       <Link
         href={href}

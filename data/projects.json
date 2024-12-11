@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Berry Jerry",
+      "description": "Descripción del proyecto 1",
+      "image": "/proyect-3.jpg",
+      "link": "https://brandonjafeth.github.io/",
+      "repo": "https://github.com/BrandonJafeth/BrandonJafeth.github.io",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": 2,
+      "title": "Nuestra Señora del Rosario",
+      "description": "Descripción del proyecto 2",
+      "image": "/Proyect.jpg",
+      "link": "https://nuestra-senora-del-rosario-informativo.vercel.app/",
+      "repo": "https://github.com/BrandonJafeth/Nuestra-Senora-Del-Rosario-Frontend",
+      "tags": ["React", "Node.js"]
+    }
+  ]
+  

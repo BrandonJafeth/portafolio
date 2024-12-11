@@ -1,13 +1,13 @@
 import { Variants } from "framer-motion";
 
-// Variantes para el sol
+
 const sunVariants: Variants = {
   initial: { y: 0 },
   animate: {
     y: [0, -5, 0],
     transition: {
       repeat: Infinity,
-      repeatType: "loop", // Valor compatible con la versión actual
+      repeatType: "loop", 
       duration: 2
     }
   }
@@ -20,7 +20,7 @@ const moonVariants: Variants = {
     y: [0, -5, 0],
     transition: {
       repeat: Infinity,
-      repeatType: "loop", // Cambia "loop" o "reverse" según lo necesites
+      repeatType: "loop", 
       duration: 2
     }
   }
@@ -29,7 +29,7 @@ const moonVariants: Variants = {
  const arrowVariants: Variants = {
     initial: { y: 0 },
     animate: {
-      y: [0, 5, 0], // Sutil movimiento vertical simulando 'viento'
+      y: [0, 5, 0],
       transition: {
         repeat: Infinity,
         repeatType: "loop",
