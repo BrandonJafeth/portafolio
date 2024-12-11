@@ -22,7 +22,7 @@ export default function Projects() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{
-              delay: index * 0.1, // Añadir un pequeño retraso entre tarjetas
+              delay: index * 0.1, 
               duration: 0.6,
               ease: "easeOut",
             }}
@@ -50,7 +50,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Ver el proyecto ${project.title}`}
-                      className="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300 transition-colors"
+                      className="text-green-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300 transition-colors"
                     >
                       <AiOutlineLink size={20} />
                     </a>

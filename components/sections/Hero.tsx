@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <motion.section
-      className="flex flex-col sm:flex-row items-center justify-center min-h-[80vh] p-4 gap-8 relative"
+      className="flex flex-col sm:flex-row items-center justify-center min-h-screen p-4 gap-8 relative"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
 
         <motion.div
-          className="absolute top-0 right-0 cursor-pointer"
+          className="absolute top-0 right-0 cursor-pointer translate-x-2" // Mueve ambos hacia la derecha
           variants={isDark ? moonVariants : sunVariants}
           initial="initial"
           animate="animate"
@@ -47,6 +47,7 @@ export default function Hero() {
               viewBox="0 0 24 24"
               fill="none"
               aria-hidden="true"
+              className="sm:translate-x-7"
             >
               <path
                 d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
@@ -59,7 +60,7 @@ export default function Hero() {
               alt="Sun Icon"
               width={40}
               height={40}
-              className="select-none"
+              className="select-none sm:translate-x-7"
               priority
             />
           )}

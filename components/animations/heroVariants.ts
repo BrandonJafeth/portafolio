@@ -13,7 +13,7 @@ const sunVariants: Variants = {
   }
 };
 
-// Variantes para la luna
+
 const moonVariants: Variants = {
   initial: { y: 0 },
   animate: {
