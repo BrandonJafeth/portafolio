@@ -28,7 +28,7 @@ export default function Hero() {
           />
         </div>
 
-        {/* Tema Oscuro/Claro */}
+    
         <motion.div
           className="absolute top-0 right-0 cursor-pointer"
           variants={isDark ? moonVariants : sunVariants}
@@ -38,10 +38,21 @@ export default function Hero() {
           aria-label="Toggle theme"
         >
           {isDark ? (
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
-              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill="white" />
+           
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+                fill="#ffffff80" 
+              />
             </svg>
           ) : (
+     
             <Image
               src="/sun-svgrepo-com.svg"
               alt="Sun Icon"
@@ -54,13 +65,15 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Texto */}
+
       <div className="text-center sm:text-left space-y-4 max-w-sm">
-        <h1 className="text-3xl font-bold">Hi, I&#39;m Brandon {isDark ? "✨" : "🍃"}</h1>
+        <h1 className="text-3xl font-bold">
+          Hi, I&#39;m Brandon {isDark ? "✨" : "🍃"}
+        </h1>
         <p className="text-md text-foreground/80">{aboutData.introduction}</p>
       </div>
 
-      {/* Flecha de Scroll */}
+
       <div className="absolute bottom-10 flex justify-center w-full z-10">
         <ScrollIndicator className="text-foreground/80 sm:bottom-4 bottom-6" />
       </div>
