@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
+import siteConfig from './config/site.config';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  ...siteConfig,
+  reactStrictMode: true,
+  swcMinify: true,
 };
 
 export default nextConfig;
