@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
 
         <motion.div
-          className="absolute top-0 right-0 cursor-pointer translate-x-2" // Mueve ambos hacia la derecha
+          className="absolute top-0 right-0 cursor-pointer translate-x-2" 
           variants={isDark ? moonVariants : sunVariants}
           initial="initial"
           animate="animate"
