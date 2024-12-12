@@ -7,7 +7,7 @@
   --foreground: #171717;
 }
 
-/* Cuando se active el modo oscuro, .dark se aplicará al html */
+
 html.dark {
   --background: #2f353d;
   --foreground: #ededed;

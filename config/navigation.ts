@@ -2,6 +2,6 @@
 export const navLinks = [
     { href: "/work", label: "Work" },
     { href: "/about", label: "About" },
-    { href: "/Cv.pdf", label: "Resume" },
+    { href: "/cv.pdf", label: "Resume" },
   ];
   
