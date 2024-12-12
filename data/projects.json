@@ -2,7 +2,7 @@
     {
       "id": 1,
       "title": "Berry Jerry",
-      "description": "Descripción del proyecto 1",
+      "description": "I collaborated with a colleague to develop a landing page for a vegetable store, improving their online presence.",
       "image": "/proyect-3.jpg",
       "link": "https://brandonjafeth.github.io/",
       "repo": "https://github.com/BrandonJafeth/BrandonJafeth.github.io",
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "title": "Nuestra Señora del Rosario",
-      "description": "Descripción del proyecto 2",
+     "description": "I developed a complete informational website for the Santa Cruz Nursing Home, collaborating with my classmates in the engineering course working on the frontend and backend.",
       "image": "/Proyect.jpg",
       "link": "https://nuestra-senora-del-rosario-informativo.vercel.app/",
       "repo": "https://github.com/BrandonJafeth/Nuestra-Senora-Del-Rosario-Frontend",
