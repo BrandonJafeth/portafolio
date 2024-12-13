@@ -1,5 +1,14 @@
 {
   "name": "Brandon Carrillo",
   "introduction": "I am a passionate and curious developer who embraces new challenges and thrives in dynamic environments.",
-  "longDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  "longDescription": "I specialize in building modern and scalable web applications, focusing on clean code and great user experiences. My journey started with a curiosity about technology and a desire to create solutions that make an impact.",
+ "location": "Based in Costa Rica",
+  "role": "Frontend Developer | Web Enthusiast",
+  "skills": ["React", "Next.js", "TypeScript", "Framer Motion", "Tailwind CSS","Zod","React Querry"],
+  "socialLinks": {
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://www.linkedin.com/in/yourprofile",
+    "twitter": "https://twitter.com/yourhandle"
+  },
+  "image": "/profile-fotor-20241213142049.avif"
 }
