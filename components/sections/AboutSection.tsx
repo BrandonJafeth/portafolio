@@ -8,12 +8,14 @@ const AboutSection = () => {
     <section className="my-16 max-w-screen-xl mx-auto px-6 sm:px-12 lg:px-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
         {/* Imagen y detalles */}
-        <div className="flex justify-center sm:mr-auto "> {/* Margen negativo a la izquierda */}
+        <div className="flex justify-center sm:mr-auto ">
+          {" "}
           <Image
             src={aboutData.image}
             alt={aboutData.name}
             width={300}
             height={300}
+            sizes="(max-width: 768px) 150px, (max-width: 1024px) 250px, 300px"
             className="rounded-full object-cover shadow-lg"
             priority
           />
@@ -53,8 +55,6 @@ const AboutSection = () => {
               ))}
             </ul>
           </div>
-
-    
         </div>
       </div>
     </section>

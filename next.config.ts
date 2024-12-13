@@ -1,10 +1,12 @@
-import type { NextConfig } from 'next';
-import siteConfig from './config/site.config';
-
-const nextConfig: NextConfig = {
-  ...siteConfig,
-  reactStrictMode: true,
-  swcMinify: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    formats: ["image/avif", "image/webp"], 
+    deviceSizes: [320, 420, 768, 1024, 1200, 1600], 
+    imageSizes: [16, 32, 48, 64, 128, 256, 384], 
+    minimumCacheTTL: 60, 
+  },
+  reactStrictMode: true
 };
 
-export default nextConfig;
+module.exports = nextConfig;

@@ -26,9 +26,10 @@ export default function Hero() {
             src="/Main vector.png"
             alt="main"
             fill
-            sizes="(max-width: 640px) 250px, 400px"
+           sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 400px"
             className="object-cover select-none rounded-lg"
             priority
+            quality={85}
           />
         </div>
 
