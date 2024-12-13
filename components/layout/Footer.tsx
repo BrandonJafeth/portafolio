@@ -2,7 +2,7 @@ import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2C2C34] text-white py-8 dark:bg-[#484852]">
+    <footer className="bg-[#2C2C34] text-white py-8 dark:bg-[#34343b]">
       <div className="max-w-screen-xl mx-auto flex items-center justify-center gap-8">
         <a
           href="https://www.instagram.com/jb_ca_07/"

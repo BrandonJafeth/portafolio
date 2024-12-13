@@ -6,16 +6,15 @@ import aboutData from "@/data/about.json";
 const AboutSection = () => {
   return (
     <section className="my-16 max-w-screen-xl mx-auto px-6 sm:px-12 lg:px-20">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-        {/* Imagen y detalles */}
-        <div className="flex justify-center sm:mr-auto ">
-          {" "}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-16 items-center">
+
+        <div className="flex justify-center sm:justify-end lg:-ml-10"> 
           <Image
             src={aboutData.image}
             alt={aboutData.name}
             width={300}
             height={300}
-            sizes="(max-width: 768px) 150px, (max-width: 1024px) 250px, 300px"
+            sizes="(max-width: 640px) 200px, (max-width: 1024px) 250px, 300px"
             className="rounded-full object-cover shadow-lg"
             priority
           />
@@ -40,11 +39,11 @@ const AboutSection = () => {
           </p>
 
           {/* Skills */}
-          <div className="mt-6">
-            <h3 className="text-md font-semibold text-gray-800 dark:text-gray-200 mb-2">
+          <div className="mt-6 max-w-lg mx-auto sm:mx-0">
+            <h3 className="text-md font-semibold text-gray-800 dark:text-gray-200 mb-4 sm:mb-2">
               Skills & Tools:
             </h3>
-            <ul className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap justify-center sm:justify-start gap-2">
               {aboutData.skills.map((skill) => (
                 <li
                   key={skill}
