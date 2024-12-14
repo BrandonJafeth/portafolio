@@ -25,13 +25,11 @@ export default function Header() {
         aria-label="Main navigation"
         className="max-w-screen-xl mx-auto px-4 py-3 relative z-50"
       >
-    <div className="w-full flex items-center justify-between px-6 py-2 sm:border sm:border-gray-700 dark:sm:border-white sm:rounded-full bg-transparent">
-
+        <div className="w-full flex items-center justify-between px-6 py-2 sm:border sm:border-gray-700 dark:sm:border-white sm:rounded-full bg-transparent">
           <Link href="/" className="font-semibold text-xl text-foreground">
             BC
           </Link>
 
-       
           <motion.button
             type="button"
             variants={iconVariants}
@@ -53,7 +51,7 @@ export default function Header() {
           </ul>
         </div>
 
-      
+        {/* Fondo oscuro */}
         {isOpen && (
           <div
             className="fixed inset-0 bg-black/30 backdrop-blur-sm sm:hidden"
@@ -61,7 +59,7 @@ export default function Header() {
           />
         )}
 
-   
+        {/* Menú de navegación móvil */}
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -70,9 +68,10 @@ export default function Header() {
               animate="visible"
               exit="exit"
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="fixed top-0 right-0 h-full w-64 bg-background border-l shadow-lg sm:hidden"
+              className="fixed top-0 right-0 h-full w-64 bg-background shadow-lg sm:hidden"
             >
-              <div className="flex items-center justify-between p-4 border-b">
+              <div className="flex items-center justify-between p-4 border-b border-gray-300 dark:border-gray-700"> 
+                {/* Línea horizontal completa */}
                 <span className="font-semibold text-xl text-foreground">BC</span>
                 <motion.button
                   variants={iconVariants}

@@ -28,8 +28,8 @@ const AboutSection = () => {
           <p className="text-lg text-gray-500 dark:text-gray-300 mt-2">
             {aboutData.role}
           </p>
-          <p className="text-md text-gray-700 dark:text-gray-400 mt-4">
-            {aboutData.introduction}
+          <p className="text-md text-gray-700 dark:text-gray-300 mt-4">
+            {aboutData.summary}
           </p>
           <p className="text-md text-gray-600 dark:text-gray-300 mt-2">
             {aboutData.longDescription}
