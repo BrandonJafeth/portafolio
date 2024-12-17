@@ -41,7 +41,7 @@ export default function Header() {
             {isOpen ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
           </motion.button>
 
-          {/* Links para desktop */}
+    
           <ul className="hidden sm:flex items-center gap-6">
             {navLinks.map(({ href, label }) => (
               <li key={href}>
@@ -51,7 +51,7 @@ export default function Header() {
           </ul>
         </div>
 
-        {/* Fondo oscuro */}
+   
         {isOpen && (
           <div
             className="fixed inset-0 bg-black/30 backdrop-blur-sm sm:hidden"
@@ -59,7 +59,7 @@ export default function Header() {
           />
         )}
 
-        {/* Menú de navegación móvil */}
+   
         <AnimatePresence>
           {isOpen && (
             <motion.div

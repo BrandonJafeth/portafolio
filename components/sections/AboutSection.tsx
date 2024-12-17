@@ -20,7 +20,6 @@ const AboutSection = () => {
           />
         </div>
 
-        {/* Texto y descripción */}
         <div className="text-center sm:text-left">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
             {aboutData.name}
@@ -38,7 +37,7 @@ const AboutSection = () => {
             {aboutData.location}
           </p>
 
-          {/* Skills */}
+      
           <div className="mt-6 max-w-lg mx-auto sm:mx-0">
             <h3 className="text-md font-semibold text-gray-800 dark:text-gray-200 mb-4 sm:mb-2">
               Skills & Tools:
