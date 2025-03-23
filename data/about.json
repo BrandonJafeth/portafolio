@@ -5,7 +5,36 @@
   "longDescription": "I specialize in building modern and scalable web applications, focusing on clean code and great user experiences. My journey started with a curiosity about technology and a desire to create solutions that make an impact.",
   "location": "Based in Costa Rica",
   "role": "Frontend Developer | Web Enthusiast",
-  "skills": ["React", "Next.js", "TypeScript", "Framer Motion", "Tailwind CSS", "Zod", "React Query"],
+  "skills": [
+    {
+      "name": "React",
+      "url": "https://react.dev"
+    },
+    {
+      "name": "Next.js",
+      "url": "https://nextjs.org"
+    },
+    {
+      "name": "TypeScript",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "Framer Motion",
+      "url": "https://www.framer.com/motion/"
+    },
+    {
+      "name": "Tailwind CSS",
+      "url": "https://tailwindcss.com/"
+    },
+    {
+      "name": "Zod",
+      "url": "https://github.com/colinhacks/zod"
+    },
+    {
+      "name": "React Query",
+      "url": "https://react-query-v3.tanstack.com/"
+    }
+  ],
   "socialLinks": {
     "github": "https://github.com/yourusername",
     "linkedin": "https://www.linkedin.com/in/yourprofile",

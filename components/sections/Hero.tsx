@@ -69,10 +69,10 @@ export default function Hero() {
       </div>
 
       <div className="text-center sm:text-left space-y-4 max-w-sm">
-        <h1 className="text-3xl font-bold">
+        <h1 className="font-inter text-3xl font-bold">
           Hi, I&#39;m Brandon {isDark ? "✨" : "🍃"}
         </h1>
-        <p className="text-md text-foreground/80">{aboutData.introduction}</p>
+        <p className="font-poppins text-md text-foreground/80">{aboutData.introduction}</p>
       </div>
 
       <div className="absolute bottom-10 flex justify-center w-full z-10">
