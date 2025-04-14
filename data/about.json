@@ -36,9 +36,61 @@
     }
   ],
   "socialLinks": {
-    "github": "https://github.com/yourusername",
-    "linkedin": "https://www.linkedin.com/in/yourprofile",
-    "twitter": "https://twitter.com/yourhandle"
+    "github": "https://github.com/BrandonJafeth",
+    "linkedin": "https://www.linkedin.com/in/brandon-carrillo-%C3%A1lvarez-13187927a/"
   },
-  "image": "/FB_IMG_1734151120202-fotor-20241213225331.png"
+  "image": "/FB_IMG_1734151120202-fotor-20241213225331.png",
+  "education": [
+    {
+      "degree": "Bachelor of Systems Engineering",
+      "institution": "Universidad Nacional de Costa Rica",
+      "location": "Nicoya, Costa Rica",
+      "period": "2022 - 2025",
+      "description": "Focused on software development, database management, and systems architecture."
+    },
+    {
+      "degree": "Diploma in Computer Application Programming, National University of Costa Rica, Nicoya",
+      "institution": "Universidad Nacional de Costa Rica",
+      "location": "Nicoya, Costa Rica",
+      "period": "2022- 2024",
+      "description": "Intensive program covering frontend and backend technologies."
+    }
+  ],
+  "experience": [
+    {
+      "position": "Full Stack Developer",
+      "company": "Nuestra Señora del Rosario",
+      "location": "Santa Cruz, Costa Rica",
+      "period": "2024 - 2025",
+      "description": "Developed a complete informational website for the Santa Cruz Nursing Home, working on both frontend and backend components.",
+      "technologies": [
+        {
+          "name": "React",
+          "url": "https://react.dev"
+        },
+        {
+          "name": "Node.js",
+          "url": "https://nodejs.org"
+        },
+        {
+          "name": "C#",
+          "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+        },
+        {
+          "name": "MySQL",
+          "url": "https://www.mysql.com/"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "proficiency": "Native"
+    },
+    {
+      "language": "English",
+      "proficiency": "Professional working proficiency"
+    }
+  ]
 }
