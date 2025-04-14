@@ -4,6 +4,7 @@
       "title": "Berry Jerry",
       "description": "I collaborated with a colleague to develop a landing page for a vegetable store, improving their online presence.",
       "image": "/proyect-3.avif",
+      "hoverImage": "/Reviews.jpg",
       "link": "https://brandonjafeth.github.io/",
       "repo": "https://github.com/BrandonJafeth/BrandonJafeth.github.io",
       "tags": [
@@ -17,8 +18,9 @@
     {
       "id": 2,
       "title": "Nuestra Señora del Rosario",
-     "description": "I developed a complete informational website for the Santa Cruz Nursing Home, collaborating with my classmates in the engineering course working on the frontend and backend.",
+      "description": "I developed a complete informational website for the Santa Cruz Nursing Home, collaborating with my classmates in the engineering course working on the frontend and backend.",
       "image": "/Proyect.avif",
+      "hoverImage": "/Voluntariado.jpg",
       "link": "https://www.senoradelrosario.tech/",
       "repo": "https://github.com/BrandonJafeth/Nuestra-Senora-Del-Rosario-Frontend",
       "tags": [
@@ -27,6 +29,19 @@
         { "name" : "C#", "url": "https://docs.microsoft.com/en-us/dotnet/csharp/" },
         { "name": "MySQL", "url": "https://www.mysql.com/" }
       ]
+    },
+    {
+      "id": 3,
+      "title": "Nuestra Señora Del Rosario - Admin",
+      "description": "This repository contains the frontend code for the Santa Cruz Nursing Home project. It's a responsive web application built with modern technologies to provide information about the nursing home services.",
+      "image": "/Administrativa.jpg",
+      "hoverImage": "/Admin 2.jpg",
+      "repo": "https://github.com/BrandonJafeth/Nuestra-Senora-Del-Rosario-Frontend",
+      "tags": [
+        { "name": "React", "url": "https://react.dev" },
+        { "name": "Node.js", "url": "https://nodejs.org/en" },
+        { "name": "C#", "url": "https://docs.microsoft.com/en-us/dotnet/csharp/" },
+        { "name": "MySQL", "url": "https://www.mysql.com/" }
+      ]
     }
   ]
-  
