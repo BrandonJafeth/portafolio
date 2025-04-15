@@ -1,6 +1,12 @@
-import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+"use client";
+
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { useTranslations } from "@/hooks/useTranslations";
+import siteConfig from "@/config/site.config";
 
 export default function Footer() {
+  const { t } = useTranslations();
+  
   return (
     <footer className="bg-[#2C2C34] text-white py-8 dark:bg-[#1a1a1d]">
       <div className="max-w-screen-xl mx-auto flex items-center justify-center gap-8">
@@ -15,7 +21,7 @@ export default function Footer() {
         </a>
         
         <a
-          href="https://github.com/BrandonJafeth"
+          href={siteConfig.socialLinks?.github || "https://github.com/BrandonJafeth"}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -25,7 +31,7 @@ export default function Footer() {
         </a>
         
         <a
-          href="https://www.linkedin.com/in/brandon-carrillo-%C3%A1lvarez-13187927a/"
+          href={siteConfig.socialLinks?.linkedin || "https://www.linkedin.com/in/brandon-carrillo-%C3%A1lvarez-13187927a/"}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
@@ -35,7 +41,7 @@ export default function Footer() {
         </a>
       </div>
       <p className="text-center mt-4 text-sm">
-      Copyright © | {new Date().getFullYear()} Brandon Carrillo
+        {t('footer.copyright')}
       </p>
     </footer>
   );

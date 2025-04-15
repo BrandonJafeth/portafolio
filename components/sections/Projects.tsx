@@ -6,9 +6,11 @@ import { useState } from "react";
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
 import projectsData from "@/data/projects.json";
 import { skillIcons } from "@/lib/skillIcons";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export default function Projects() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+  const { t } = useTranslations();
 
   return (
     <motion.section
@@ -61,6 +63,7 @@ export default function Projects() {
                     src={project.image}
                     alt={project.title}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
                     priority
                   />
@@ -78,6 +81,7 @@ export default function Projects() {
                     src={project.hoverImage}
                     alt={`${project.title} - hover`}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
                     priority
                   />
@@ -105,7 +109,7 @@ export default function Projects() {
                                    rounded-full flex items-center gap-1"
                       >
                         <AiOutlineLink size={18} />
-                        <span className="hidden sm:inline">Demo</span>
+                        <span className="hidden sm:inline">{t('projects.demo')}</span>
                       </a>
                     )}
                     {project.repo && (
@@ -121,15 +125,15 @@ export default function Projects() {
                                    rounded-full flex items-center gap-1"
                       >
                         <AiOutlineGithub size={18} />
-                        <span className="hidden sm:inline">Repo</span>
+                        <span className="hidden sm:inline">{t('projects.repo')}</span>
                       </a>
                     )}
                   </div>
                 </div>
 
                 {/* Descripción */}
-                <p className="font-poppins text-sm text-gray-600 dark:text-gray-400 mb-4">
-                  {project.description}
+                <p className="font-poppins text-sm text-gray-600 dark:text-gray-200 mb-4">
+                  {t(`projects.project${project.id}.description`)}
                 </p>
 
                 {/* Tags (badges) */}

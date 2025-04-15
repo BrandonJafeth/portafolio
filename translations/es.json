@@ -1,0 +1,95 @@
+{
+  "common": {
+    "language": "Español",
+    "downloadCV": "Descargar CV",
+    "contactMe": "Contáctame",
+    "connectWithMe": "Conéctate conmigo",
+    "linkedinProfile": "Perfil de LinkedIn",
+    "githubProjects": "Proyectos en GitHub",
+    "workTogether": "¿Quieres trabajar juntos?"
+  },
+  "nav": {
+    "work": "Proyectos",
+    "about": "Sobre mí",
+    "resume": "Currículum"
+  },
+  "hero": {
+    "greeting": "Hola, soy Brandon",
+    "introduction": "Como estudiante de desarrollo web, me apasiona convertir ideas en experiencias digitales impactantes. Diseño interfaces intuitivas y adaptables, combinando creatividad y código para ofrecer interacciones fluidas y cautivadoras."
+  },
+  "about": {
+    "role": "Desarrollador Full Stack | Entusiasta Web",
+    "languages": "Idiomas",
+    "skills": "Habilidades y Tecnologías",
+    "education": "Educación",
+    "experience": "Experiencia Laboral",
+    "location": "Ubicado en Costa Rica",
+    "summary": "En mi camino como estudiante de desarrollo web, he descubierto el poder de diseñar interfaces que forjan conexiones reales. Me especializo en construir soluciones digitales intuitivas y responsivas que combinan tecnología y diseño para crear experiencias memorables.",
+    "longDescription": "Me especializo en construir aplicaciones web modernas y escalables, enfocándome en código limpio y excelentes experiencias de usuario. Mi viaje comenzó con una curiosidad por la tecnología y un deseo de crear soluciones que generen impacto."
+  },
+  "projects": {
+    "demo": "Demo",
+    "repo": "Repositorio",
+    "viewProject": "Ver proyecto",
+    "technologies": "Tecnologías utilizadas",
+    "project1": {
+      "title": "Berry Jerry",
+      "description": "Colaboré con una amiga para desarrollar una página infórmativa para una tienda relacionada con frutas y verduras, mejorando su presencia en línea."
+    },
+    "project2": {
+      "title": "Nuestra Señora del Rosario",
+      "description": "Desarrollé un sitio web informativo completo para el Hogar de Ancianos de Santa Cruz, colaborando con mis compañeros de clase en el curso de ingeniería en sistemas trabajando en el frontend y backend."
+    },
+    "project3": {
+      "title": "Nuestra Señora Del Rosario - Admin",
+      "description": "Este repositorio contiene el código frontend para el proyecto del Hogar de Ancianos de Santa Cruz. Es un sistema web construido con tecnologías modernas para gestionar la información relacionada con el hogar de ancianos."
+    }
+  },
+  "contact": {
+    "collaborationMessage": "Descarga mi currículum o contáctame para discutir oportunidades de colaboración.",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar"
+  },
+  "education": {
+    "item1": {
+      "degree": "Bachillerato en Ingeniería de Sistemas",
+      "institution": "Universidad Nacional de Costa Rica",
+      "location": "Nicoya, Costa Rica",
+      "period": "2022 - 2025",
+      "description": "Enfocado en desarrollo de software, gestión de bases de datos y arquitectura de sistemas."
+    },
+    "item2": {
+      "degree": "Diplomado en Programación de Aplicaciones Informáticas",
+      "institution": "Universidad Nacional de Costa Rica",
+      "location": "Nicoya, Costa Rica",
+      "period": "2022- 2024",
+      "description": "Programa intensivo que cubre tecnologías frontend y backend."
+    }
+  },
+  "experience": {
+    "item1": {
+      "position": "Desarrollador Full Stack",
+      "company": "Nuestra Señora del Rosario",
+      "location": "Santa Cruz, Costa Rica",
+      "period": "2024 - 2025",
+      "description": "Desarrollamos con mi equipo de trabajo un sitio web informativo y un sistema administrativo completo para el Hogar de Ancianos de Santa Cruz, trabajando tanto en componentes frontend como backend, para brindarles una solución integral."
+    }
+  },
+  "languages": {
+    "spanish": {
+      "language": "Español",
+      "proficiency": "Nativo"
+    },
+    "english": {
+      "language": "Inglés",
+      "proficiency": "Intermedio - mejorando activamente"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Brandon Carrillo. Todos los derechos reservados.",
+    "madeWith": "Hecho con",
+    "and": "y"
+  }
+}

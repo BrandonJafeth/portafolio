@@ -4,14 +4,17 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import aboutData from "@/data/about.json";
 import { useThemeToggle } from "@/hooks/useThemeToggle";
+import { useTranslations } from "@/hooks/useTranslations";
 import { useEffect, useState } from "react";
 
 import { skillIcons } from "@/lib/skillIcons";
 import EducationItem from "../about/EducationItem";
 import ExperienceItem from "../about/ExperienceItem";
+import LanguageItem from "../about/LanguageItem";
 
 const AboutSection = () => {
   const { mounted } = useThemeToggle();
+  const { t } = useTranslations();
   const [key, setKey] = useState(0);
 
   useEffect(() => {
@@ -41,6 +44,7 @@ const AboutSection = () => {
               src={aboutData.image}
               alt={`${aboutData.name} profile picture`}
               fill
+              sizes="(max-width: 640px) 256px, 256px"
               className="rounded-full object-cover shadow-lg"
               priority
             />
@@ -51,29 +55,51 @@ const AboutSection = () => {
             {aboutData.name}
           </h1>
           <h2 className="font-inter text-lg text-green-500 dark:text-green-500 mt-2">
-            {aboutData.role}
+            {t('about.role')}
           </h2>
           <p className="font-poppins text-md text-gray-700 dark:text-white mt-4">
-            {aboutData.introduction}
+            {t('about.summary')}
           </p>
           <p className="font-poppins text-md text-gray-600 dark:text-white mt-2">
-            {aboutData.longDescription}
+            {t('about.longDescription')}
           </p>
           <p className="font-poppins text-sm text-gray-500  dark:text-gray-300 mt-4">
-            {aboutData.location}
+            {t('about.location')}
           </p>
         </div>
       </motion.div>
 
-      {/* Sección de habilidades */}
+      {/* Sección de idiomas - Ahora antes de las habilidades */}
       <motion.div 
         className="mb-12"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
+        key={`languages-${key}`}
+      >
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 pb-2 border-b border-gray-200 dark:border-gray-700">
+          {t('about.languages')}
+        </h2>
+        <div className="flex flex-wrap gap-3">
+          {aboutData.languages.map((item, index) => (
+            <LanguageItem
+              key={index}
+              language={t(`languages.${item.language.toLowerCase()}.language`)}
+              proficiency={t(`languages.${item.language.toLowerCase()}.proficiency`)}
+            />
+          ))}
+        </div>
+      </motion.div>
+
+      {/* Sección de habilidades - Ahora después de idiomas */}
+      <motion.div 
+        className="mb-12"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
       >
         <h2 className="font-inter text-2xl font-bold text-gray-900 dark:text-white mb-6 pb-2 border-b border-gray-200 dark:border-gray-700">
-          Skills & Technologies
+          {t('about.skills')}
         </h2>
         <div className="flex flex-wrap gap-3">
           {aboutData.skills.map((skill, index) => {
@@ -105,10 +131,10 @@ const AboutSection = () => {
         className="mb-10"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         <h2 className="font-inter text-2xl font-bold text-gray-900 dark:text-white mb-6 pb-2 border-b border-gray-200 dark:border-gray-700">
-          Education
+          {t('about.education')}
         </h2>
         
         {/* Distribución de educación en dos columnas usando flex */}
@@ -118,11 +144,11 @@ const AboutSection = () => {
             {aboutData.education.length > 0 && (
               <EducationItem
                 key={0}
-                degree={aboutData.education[0].degree}
-                institution={aboutData.education[0].institution}
-                location={aboutData.education[0].location}
-                period={aboutData.education[0].period}
-                description={aboutData.education[0].description}
+                degree={t('education.item1.degree')}
+                institution={t('education.item1.institution')}
+                location={t('education.item1.location')}
+                period={t('education.item1.period')}
+                description={t('education.item1.description')}
               />
             )}
           </div>
@@ -132,18 +158,16 @@ const AboutSection = () => {
             {aboutData.education.length > 1 && (
               <EducationItem
                 key={1}
-                degree={aboutData.education[1].degree}
-                institution={aboutData.education[1].institution}
-                location={aboutData.education[1].location}
-                period={aboutData.education[1].period}
-                description={aboutData.education[1].description}
+                degree={t('education.item2.degree')}
+                institution={t('education.item2.institution')}
+                location={t('education.item2.location')}
+                period={t('education.item2.period')}
+                description={t('education.item2.description')}
               />
             )}
           </div>
         </div>
       </motion.div>
-
-     
 
       {/* Segunda fila: Work Experience ocupando todo el ancho */}
       <motion.div 
@@ -154,19 +178,17 @@ const AboutSection = () => {
         key={`experience-${key}`}
       >
         <h2 className="font-inter text-2xl font-bold text-gray-900 dark:text-white mb-6 pb-2 border-b border-gray-200 dark:border-gray-700">
-          Work Experience
+          {t('about.experience')}
         </h2>
-        {aboutData.experience.map((item, index) => (
-          <ExperienceItem
-            key={index}
-            position={item.position}
-            company={item.company}
-            location={item.location}
-            period={item.period}
-            description={item.description}
-            technologies={item.technologies}
-          />
-        ))}
+        <ExperienceItem
+          key={0}
+          position={t('experience.item1.position')}
+          company={t('experience.item1.company')}
+          location={t('experience.item1.location')}
+          period={t('experience.item1.period')}
+          description={t('experience.item1.description')}
+          technologies={aboutData.experience[0].technologies}
+        />
       </motion.div>
     </motion.section>
   );

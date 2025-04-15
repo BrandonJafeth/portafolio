@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { LanguageProvider } from "@/context/language/LanguageProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -47,9 +48,11 @@ export default function RootLayout({
       </head>
       <body className="antialiased min-h-screen flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="system">
-          <Header />
-          <main className="flex-grow">{children}</main>
-          <Footer />
+          <LanguageProvider>
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

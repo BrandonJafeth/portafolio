@@ -3,12 +3,13 @@
 import { motion } from "framer-motion";
 import { sunVariants, moonVariants } from "../animations/heroVariants";
 import { useThemeToggle } from "@/hooks/useThemeToggle";
-import aboutData from "@/data/about.json";
+import { useTranslations } from "@/hooks/useTranslations";
 import Image from "next/image";
 import { ScrollIndicator } from "@/components/ui/ScrollIndicator";
 
 export default function Hero() {
   const { mounted, isDark, toggleTheme } = useThemeToggle();
+  const { t } = useTranslations();
 
   if (!mounted) return <div className="h-[80vh]"></div>;
 
@@ -26,7 +27,7 @@ export default function Hero() {
             src="/Main vector.png"
             alt="main"
             fill
-           sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 400px"
+            sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 400px"
             className="object-cover select-none rounded-lg"
             priority
             quality={85}
@@ -70,9 +71,9 @@ export default function Hero() {
 
       <div className="text-center sm:text-left space-y-4 max-w-sm">
         <h1 className="font-inter text-3xl font-bold">
-          Hi, I&#39;m Brandon {isDark ? "✨" : "🍃"}
+          {t('hero.greeting')} {isDark ? "✨" : "🍃"}
         </h1>
-        <p className="font-poppins text-md text-foreground/80">{aboutData.introduction}</p>
+        <p className="font-poppins text-md text-foreground/80">{t('hero.introduction')}</p>
       </div>
 
       <div className="absolute bottom-10 flex justify-center w-full z-10">

@@ -4,6 +4,7 @@
   "summary": "In my journey as a web development student, I have discovered the power of designing interfaces that forge real connections. I specialize in building intuitive and responsive digital solutions that blend technology and design to create memorable experiences.",
   "longDescription": "I specialize in building modern and scalable web applications, focusing on clean code and great user experiences. My journey started with a curiosity about technology and a desire to create solutions that make an impact.",
   "location": "Based in Costa Rica",
+  "contactEmail": "brandoncarrilloalvarez2@gmail.com",
   "role": "Full Stack Developer | Web Enthusiast",
   "skills": [
     {
@@ -79,6 +80,21 @@
         {
           "name": "MySQL",
           "url": "https://www.mysql.com/"
+        },
+        {
+          "name": "Tailwind CSS",
+          "url": "https://tailwindcss.com/"
+        },
+
+        {
+          
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org/"
+        },
+        {
+          
+          "name": "React Query",
+          "url": "https://react-query-v3.tanstack.com/"
         }
       ]
     }
@@ -90,7 +106,7 @@
     },
     {
       "language": "English",
-      "proficiency": "Professional working proficiency"
+      "proficiency": "Intermediate - actively improving"
     }
   ]
 }

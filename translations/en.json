@@ -1,0 +1,95 @@
+{
+  "common": {
+    "language": "English",
+    "downloadCV": "Download CV",
+    "contactMe": "Contact Me",
+    "connectWithMe": "Connect with me",
+    "linkedinProfile": "LinkedIn Profile",
+    "githubProjects": "GitHub Projects",
+    "workTogether": "Want to work together?"
+  },
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "resume": "Resume"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Brandon",
+    "introduction": "As a web development student, I'm passionate about turning ideas into impactful digital experiences. I design intuitive and adaptable interfaces, blending creativity and code to deliver smooth and captivating interactions."
+  },
+  "about": {
+    "role": "Full Stack Developer | Web Enthusiast",
+    "languages": "Languages",
+    "skills": "Skills & Technologies",
+    "education": "Education",
+    "experience": "Work Experience",
+    "location": "Based in Costa Rica",
+    "summary": "In my journey as a web development student, I have discovered the power of designing interfaces that forge real connections. I specialize in building intuitive and responsive digital solutions that blend technology and design to create memorable experiences.",
+    "longDescription": "I specialize in building modern and scalable web applications, focusing on clean code and great user experiences. My journey started with a curiosity about technology and a desire to create solutions that make an impact."
+  },
+  "projects": {
+    "demo": "Demo",
+    "repo": "Repo",
+    "viewProject": "View project",
+    "technologies": "Technologies used",
+    "project1": {
+      "title": "Berry Jerry",
+      "description": "I collaborated with a colleague to develop a landing page for a vegetable store, improving their online presence."
+    },
+    "project2": {
+      "title": "Nuestra Señora del Rosario",
+      "description": "I developed a complete informational website for the Santa Cruz Nursing Home, collaborating with my classmates in the engineering course working on the frontend and backend."
+    },
+    "project3": {
+      "title": "Nuestra Señora Del Rosario - Admin",
+      "description": "This repository contains the frontend code for the Santa Cruz Nursing Home project. It's a responsive web application built with modern technologies to provide information about the nursing home services."
+    }
+  },
+  "contact": {
+    "collaborationMessage": "Download my resume or reach out to discuss collaboration opportunities.",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send"
+  },
+  "education": {
+    "item1": {
+      "degree": "Bachelor of Systems Engineering",
+      "institution": "Universidad Nacional de Costa Rica",
+      "location": "Nicoya, Costa Rica",
+      "period": "2022 - 2025",
+      "description": "Focused on software development, database management, and systems architecture."
+    },
+    "item2": {
+      "degree": "Diploma in Computer Application Programming",
+      "institution": "Universidad Nacional de Costa Rica",
+      "location": "Nicoya, Costa Rica",
+      "period": "2022- 2024",
+      "description": "Intensive program covering frontend and backend technologies."
+    }
+  },
+  "experience": {
+    "item1": {
+      "position": "Full Stack Developer",
+      "company": "Nuestra Señora del Rosario",
+      "location": "Santa Cruz, Costa Rica",
+      "period": "2024 - 2025",
+      "description": "Developed a complete informational website for the Santa Cruz Nursing Home, working on both frontend and backend components."
+    }
+  },
+  "languages": {
+    "spanish": {
+      "language": "Spanish",
+      "proficiency": "Native"
+    },
+    "english": {
+      "language": "English",
+      "proficiency": "Intermediate - actively improving"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © | 2025 Brandon Carrillo.",
+    "madeWith": "Made with",
+    "and": "and"
+  }
+}

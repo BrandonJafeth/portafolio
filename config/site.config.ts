@@ -2,6 +2,7 @@ const siteConfig = {
   baseUrl: "https://portfolio-gold-two-44.vercel.app",
   workPath: "/work",
   title: "Brandon Carrillo",
+  contactEmail: "brandoncarrilloalvarez2@gmail.com",
   description: "Portafolio de trabajo de un desarrollador de software.",
   keywords: [
     "Frontend Developer",

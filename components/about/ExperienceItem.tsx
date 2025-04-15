@@ -21,9 +21,10 @@ const ExperienceItem = ({
       <h3 className="font-inter text-lg font-semibold text-gray-900 dark:text-gray-100">{position}</h3>
       <div className="flex justify-between items-center mt-1">
         <p className="font-poppins text-md font-medium text-green-500">{company}, {location}</p>
-        <p className="font-poppins text-sm text-gray-600 dark:text-gray-200">{period}</p>
+       
       </div>
       <p className="font-poppins mt-2 text-gray-600 dark:text-gray-200">{description}</p>
+      <p className="font-poppins text-sm text-gray-600 dark:text-gray-200">{period}</p>
       
       {/* Tecnologías utilizadas */}
       <div className="mt-3 flex flex-wrap gap-2">
