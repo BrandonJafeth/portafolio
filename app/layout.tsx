@@ -5,6 +5,27 @@ import { ThemeProvider } from "next-themes";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { LanguageProvider } from "@/context/language/LanguageProvider";
+import type { Metadata } from 'next';
+import SEOConfig from "@/config/seo.config";
+
+export const metadata: Metadata = {
+  title: SEOConfig.title,
+  description: SEOConfig.description,
+  keywords: ['web development', 'full stack', 'React', 'Next.js', 'TypeScript'],
+  openGraph: {
+    type: 'website',
+    locale: SEOConfig.openGraph.locale,
+    url: SEOConfig.openGraph.url,
+    title: SEOConfig.openGraph.title,
+    description: SEOConfig.openGraph.description,
+    siteName: SEOConfig.openGraph.site_name,
+    images: SEOConfig.openGraph.images,
+  },
+  metadataBase: new URL(SEOConfig.canonical),
+  alternates: {
+    canonical: '/',
+  },
+};
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,7 +60,6 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      // Combina tus variables de fuentes
       className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppins.variable}`}
       suppressHydrationWarning
     >
