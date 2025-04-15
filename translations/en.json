@@ -43,6 +43,10 @@
     "project3": {
       "title": "Nuestra Señora Del Rosario - Admin",
       "description": "This repository contains the frontend code for the Santa Cruz Nursing Home project. It's a responsive web application built with modern technologies to provide information about the nursing home services."
+    },
+    "project4": {
+      "title": "Course Manage",
+      "description": "This project is a web application designed for course management. It allows users to create and manage courses."
     }
   },
   "contact": {

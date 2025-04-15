@@ -43,5 +43,19 @@
         { "name": "C#", "url": "https://docs.microsoft.com/en-us/dotnet/csharp/" },
         { "name": "MySQL", "url": "https://www.mysql.com/" }
       ]
+    },
+    {
+      
+      "id": 4,
+      "title": "Course Manage",
+      "description": "This project is a web application designed for course management. It allows users to create and manage courses.",
+      "image": "/Course.jpg",
+      "hoverImage": "/AddCourse.jpg",
+      "link": "https://courses-manage2.vercel.app/",
+      "repo": "https://github.com/BrandonJafeth/Courses-Manage",
+      "tags": [
+        { "name": "React", "url": "https://react.dev" },
+        { "name": "Node.js", "url": "https://nodejs.org/en" }
+      ]
     }
   ]
