@@ -39,7 +39,7 @@ const AboutSection = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         <div className="w-full md:w-1/3 flex justify-center md:justify-start">
-          <div className="relative w-64 h-64 overflow-hidden rounded-full border-2 border-green-500 ">
+          <div className="relative w-64 h-64 overflow-hidden rounded-full border-2 border-green-500">
             <Image
               src={aboutData.image}
               alt={`${aboutData.name} profile picture`}
@@ -47,6 +47,11 @@ const AboutSection = () => {
               sizes="(max-width: 640px) 256px, 256px"
               className="rounded-full object-cover shadow-lg"
               priority
+              quality={80}
+              loading="eager"
+              fetchPriority="high"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAECgIDTBI2PQAAAABJRU5ErkJggg=="
             />
           </div>
         </div>

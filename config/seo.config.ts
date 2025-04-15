@@ -1,22 +1,22 @@
 const SEOConfig = {
-    title: 'Brandon Carrillo',
-    description: 'Esta es el portafolio de trabajo de un creador de software.',
-    canonical: 'https://portfolio-gold-two-44.vercel.app/work',
+    title: 'Brandon Carrillo | Full Stack Developer',
+    description: 'Portfolio of Brandon Carrillo, a Full Stack Web Developer specializing in React, Next.js, TypeScript and modern web technologies.',
+    canonical: 'https://www.brandondev.me',
     openGraph: {
       type: 'website',
-      locale: 'es_ES',
-      url: 'https://portfolio-gold-two-44.vercel.app/work',
-      title: 'Brandon Carrillo',
-      description: 'Esta es el portafolio de trabajo de un creador de software.',
+      locale: 'en_US',
+      url: 'https://www.brandondev.me',
+      title: 'Brandon Carrillo | Full Stack Developer',
+      description: 'Portfolio of Brandon Carrillo, a Full Stack Web Developer specializing in React, Next.js, TypeScript and modern web technologies.',
       images: [
         {
-          url: 'https://portfolio-gold-two-44.vercel.app/imagen-og.jpg',
+          url: 'https://www.brandondev.me/FB_IMG_1734151120202-fotor-20241213225331.png',
           width: 1200,
           height: 630,
-          alt: 'thumbnail',
+          alt: 'Brandon Carrillo - Web Developer',
         },
       ],
-      site_name: 'Brandon Carrillo',
+      site_name: 'Brandon Carrillo Portfolio',
     }
   };
   

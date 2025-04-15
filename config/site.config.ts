@@ -1,15 +1,17 @@
 const siteConfig = {
-  baseUrl: "https://portfolio-gold-two-44.vercel.app",
+  baseUrl: "https://www.brandondev.me",
   workPath: "/work",
-  title: "Brandon Carrillo",
+  title: "Brandon Carrillo | Full Stack Developer",
   contactEmail: "brandoncarrilloalvarez2@gmail.com",
-  description: "Portafolio de trabajo de un desarrollador de software.",
+  description: "Portfolio of Brandon Carrillo, a Full Stack Web Developer specializing in React, Next.js, TypeScript and modern web technologies.",
   keywords: [
     "Frontend Developer",
-    "Portafolio",
+    "Full Stack Developer",
+    "Portfolio",
     "Next.js",
     "React",
-    "Web Developer",
+    "TypeScript",
+    "Web Development",
   ],
   socialLinks: {
     github: "https://github.com/BrandonJafeth",

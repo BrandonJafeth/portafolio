@@ -31,6 +31,10 @@ export default function Hero() {
             className="object-cover select-none rounded-lg"
             priority
             quality={85}
+            loading="eager"
+            fetchPriority="high"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAECgIDTBI2PQAAAABJRU5ErkJggg=="
           />
         </div>
 
@@ -52,7 +56,7 @@ export default function Hero() {
               className="sm:translate-x-7"
             >
               <path
-                d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+                d="M21 12.79A9 9 0 1111.21 3 A7 7 0 0021 12.79z"
                 fill="#ffffff80"
               />
             </svg>
