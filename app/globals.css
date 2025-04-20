@@ -5,8 +5,8 @@
 :root {
   --background: #fffffd;
   --foreground: #171717;
+  --transition-duration: 150ms;
 }
-
 
 html.dark {
   --background: #25292ef6;
@@ -20,6 +20,21 @@ body {
   padding-top: env(safe-area-inset-top);
 }
 
+/* Optimización para transiciones de tema */
+body,
+body * {
+  transition: color var(--transition-duration) ease,
+              background-color var(--transition-duration) ease,
+              border-color var(--transition-duration) ease;
+}
+
+/* Desactivar transiciones para propiedades que puedan causar retrasos */
+body * {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Transiciones específicas para elementos animados */
 .menu-enter {
   opacity: 0;
   transform: translateX(-20px);
@@ -30,10 +45,10 @@ body {
   transition-delay: 0ms;
 }
 .menu-open .menu-enter:nth-child(2) {
-  transition-delay: 300ms;
+  transition-delay: 150ms;
 }
 .menu-open .menu-enter:nth-child(3) {
-  transition-delay: 600ms;
+  transition-delay: 300ms;
 }
 
 .menu-open .menu-enter {
