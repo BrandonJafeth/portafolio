@@ -31,8 +31,12 @@ body * {
 
 /* Desactivar transiciones para propiedades que puedan causar retrasos */
 body * {
-  backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Optimizaciones de transición más compatibles con todos los navegadores */
+.will-change-transform {
+  will-change: transform;
 }
 
 /* Transiciones específicas para elementos animados */

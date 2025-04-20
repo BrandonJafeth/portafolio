@@ -1,6 +1,5 @@
 import { Variants } from "framer-motion";
 
-
 export const menuItemVariants: Variants = {
   hidden: { x: -20, opacity: 0 },
   visible: (index: number) => ({
@@ -14,13 +13,29 @@ export const menuItemVariants: Variants = {
   }),
 };
 
-
 export const menuContainerVariants: Variants = {
-  hidden: { x: "100%" },
-  visible: { x: 0 },
-  exit: { x: "100%" },
+  hidden: { 
+    x: "100%",
+    transition: {
+      duration: 0.15,
+      ease: "easeIn",
+    }
+  },
+  visible: { 
+    x: 0,
+    transition: {
+      duration: 0.15, 
+      ease: "easeOut", 
+    }
+  },
+  exit: { 
+    x: "100%",
+    transition: {
+      duration: 0.15,
+      ease: "easeIn",
+    }
+  },
 };
-
 
 export const iconVariants: Variants = {
   tap: { scale: 0.9 },
