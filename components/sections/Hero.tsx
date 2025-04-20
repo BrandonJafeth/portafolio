@@ -97,8 +97,8 @@ export default function Hero() {
         <p className="font-poppins text-md text-foreground/80">{t('hero.introduction')}</p>
       </div>
 
-      <div className="absolute bottom-10 flex justify-center w-full z-10">
-        <ScrollIndicator className="text-foreground/80 sm:bottom-4 bottom-6" />
+      <div className="absolute bottom-20 md:bottom-16 lg:bottom-24 xl:bottom-32 flex justify-center w-full z-10">
+        <ScrollIndicator className="text-foreground/80" />
       </div>
     </motion.section>
   );

@@ -20,7 +20,7 @@ export function ScrollIndicator({ className = "" }: ScrollIndicatorProps) {
       onClick={handleScroll}
     >
       <motion.div
-        className="cursor-pointer z-10 absolute bottom-[20px] sm:bottom-[30px]"
+        className="cursor-pointer z-10 absolute"
         initial={{ y: 0 }}
         animate={{ y: [0, 10, 0] }}
         transition={{
