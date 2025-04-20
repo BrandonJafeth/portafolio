@@ -22,10 +22,10 @@ export function ScrollIndicator({ className = "" }: ScrollIndicatorProps) {
       <motion.div
         className="cursor-pointer z-10 absolute"
         initial={{ y: 0 }}
-        animate={{ y: [0, 10, 0] }}
+        animate={{ y: [0, 25, 0] }}
         transition={{
           repeat: Infinity,
-          duration: 1.5,
+          duration: 2,
           ease: "easeInOut",
         }}
         aria-hidden="true"
