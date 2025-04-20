@@ -15,7 +15,7 @@ export default function Hero() {
 
   return (
     <motion.section
-      className="flex flex-col sm:flex-row items-center justify-center min-h-screen p-4 gap-8 relative"
+      className="flex flex-col sm:flex-row items-center justify-center min-h-screen p-4 gap-8 relative transition-all duration-500"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
