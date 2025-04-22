@@ -13,6 +13,10 @@
     "about": "About",
     "resume": "Resume"
   },
+  "resume": {
+    "title": "My Resume",
+    "download": "Download PDF"
+  },
   "hero": {
     "greeting": "Hi, I'm Brandon",
     "introduction": "As a web development student, I'm passionate about turning ideas into impactful digital experiences. I design intuitive and adaptable interfaces, blending creativity and code to deliver smooth and captivating interactions."

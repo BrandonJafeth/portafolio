@@ -65,7 +65,7 @@ export default function Projects() {
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
-                    priority
+                    loading="eager"
                   />
                 </motion.div>
 
@@ -83,7 +83,7 @@ export default function Projects() {
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
-                    priority
+                    loading="eager"
                   />
                 </motion.div>
               </a>

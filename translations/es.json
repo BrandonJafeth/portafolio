@@ -11,7 +11,11 @@
   "nav": {
     "work": "Proyectos",
     "about": "Sobre mí",
-    "resume": "Currículum"
+    "resume": "Cv"
+  },
+  "resume": {
+    "title": "Mi Cv",
+    "download": "Descargar PDF"
   },
   "hero": {
     "greeting": "Hola, soy Brandon",
