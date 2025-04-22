@@ -20,7 +20,7 @@ body {
   padding-top: env(safe-area-inset-top);
 }
 
-/* Optimización para transiciones de tema */
+/* Optimización de transiciones de tema */
 body,
 body * {
   transition: color var(--transition-duration) ease,
