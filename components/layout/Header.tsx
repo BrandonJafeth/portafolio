@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaGlobeAmericas } from "react-icons/fa";
 import { navLinks } from "@/config/navigation";
-import { usePathname } from "next/navigation";
 import NavItem from "@/components/ui/NavItem";
 import { useLanguage } from "@/hooks/useLanguage";
 import {
@@ -18,7 +17,6 @@ import {
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-  const pathname = usePathname();
   const { language, setLanguage } = useLanguage();
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
@@ -50,7 +48,7 @@ export default function Header() {
           <ul className="hidden sm:flex items-center gap-6">
             {navLinks.map(({ href, label }) => (
               <li key={href}>
-                <NavItem href={href} label={label} isActive={pathname === href} />
+                <NavItem href={href} label={label} />
               </li>
             ))}
             
@@ -157,7 +155,7 @@ export default function Header() {
                       exit="hidden"
                       onClick={toggleMenu}
                     >
-                      <NavItem href={href} label={label} isActive={pathname === href} />
+                      <NavItem href={href} label={label} />
                     </motion.li>
                   ))}
                   
