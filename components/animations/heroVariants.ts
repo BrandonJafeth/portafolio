@@ -1,6 +1,6 @@
 import { Variants } from "framer-motion";
 
-// Variantes para el modo sol con transición mejorada
+// Variantes para el modo sol con transición
 const sunVariants: Variants = {
   initial: { y: 0, opacity: 0, scale: 0.8, rotate: -45 },
   animate: {
@@ -27,7 +27,7 @@ const sunVariants: Variants = {
   }
 };
 
-// Variantes para el modo luna con transición mejorada
+// Variantes para el modo luna con transición 
 const moonVariants: Variants = {
   initial: { y: 0, opacity: 0, scale: 0.8, rotate: 45 },
   animate: {

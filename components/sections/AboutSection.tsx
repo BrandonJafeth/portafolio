@@ -31,7 +31,7 @@ const AboutSection = () => {
       transition={{ duration: 0.5 }}
       key={`section-${key}`}
     >
-      {/* Cabecera - Información personal */}
+      {/* Información personal */}
       <motion.div 
         className="flex flex-col md:flex-row gap-8 mb-12"
         initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ const AboutSection = () => {
         </div>
       </motion.div>
 
-      {/* Sección de idiomas - Ahora antes de las habilidades */}
+      {/* Sección de idiomas */}
       <motion.div 
         className="mb-12"
         initial={{ opacity: 0, y: 20 }}
@@ -96,7 +96,7 @@ const AboutSection = () => {
         </div>
       </motion.div>
 
-      {/* Sección de habilidades - Ahora después de idiomas */}
+      {/* Sección de habilidades */}
       <motion.div 
         className="mb-12"
         initial={{ opacity: 0, y: 20 }}
@@ -131,7 +131,7 @@ const AboutSection = () => {
         </div>
       </motion.div>
 
-      {/* Sección de Educación con título general */}
+      {/* Sección de Educación */}
       <motion.div
         className="mb-10"
         initial={{ opacity: 0, y: 20 }}
@@ -142,7 +142,7 @@ const AboutSection = () => {
           {t('about.education')}
         </h2>
         
-        {/* Distribución de educación en dos columnas usando flex */}
+        {/* Distribución de educación */}
         <div className="flex flex-col md:flex-row gap-8">
           {/* Primera columna de educación */}
           <div className="flex-1">
@@ -174,7 +174,7 @@ const AboutSection = () => {
         </div>
       </motion.div>
 
-      {/* Segunda fila: Work Experience ocupando todo el ancho */}
+      {/* Work Experience */}
       <motion.div 
         className="w-full"
         initial={{ opacity: 0, y: 20 }}
