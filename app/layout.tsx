@@ -39,7 +39,7 @@ const poppins = Poppins({
   weight: ["400", "500", "700"], 
 });
 
-// Tus fuentes locales
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
