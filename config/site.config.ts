@@ -15,7 +15,7 @@ const siteConfig = {
   ],
   socialLinks: {
     github: "https://github.com/BrandonJafeth",
-    linkedin: "https://www.linkedin.com/in/brandon-carrillo-%C3%A1lvarez-13187927a/"
+    linkedin: "https://www.linkedin.com/in/brandonca/"
   },
 };
 

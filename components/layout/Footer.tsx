@@ -31,7 +31,7 @@ export default function Footer() {
         </a>
         
         <a
-          href={siteConfig.socialLinks?.linkedin || "https://www.linkedin.com/in/brandon-carrillo-%C3%A1lvarez-13187927a/"}
+          href={siteConfig.socialLinks?.linkedin || "https://www.linkedin.com/in/brandonca/"}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
