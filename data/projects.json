@@ -1,22 +1,7 @@
 [
+    
     {
       "id": 1,
-      "title": "Berry Jerry",
-      "description": "I collaborated with a colleague to develop a landing page for a vegetable store, improving their online presence.",
-      "image": "/proyect-3.avif",
-      "hoverImage": "/Reviews.jpg",
-      "link": "https://brandonjafeth.github.io/",
-      "repo": "https://github.com/BrandonJafeth/BrandonJafeth.github.io",
-      "tags": [
-        { "name": "HTML5", "url": "https://developer.mozilla.org/es/docs/Web/HTML" },
-        { "name": "CSS3", "url": "https://developer.mozilla.org/es/docs/Web/CSS" },
-        { "name": "JavaScript", "url": "https://developer.mozilla.org/es/docs/Web/JavaScript" },
-        { "name": "NestJS", "url": "https://nestjs.com/" },
-        { "name": "MySQL", "url": "https://www.mysql.com/" }
-      ]
-    },
-    {
-      "id": 2,
       "title": "Nuestra Señora del Rosario",
       "description": "I developed a complete informational website for the Santa Cruz Nursing Home, collaborating with my classmates in the engineering course working on the frontend and backend.",
       "image": "/Proyect.avif",
@@ -31,7 +16,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "Nuestra Señora Del Rosario - Admin",
       "description": "This repository contains the frontend code for the Santa Cruz Nursing Home project. It's a responsive web application built with modern technologies to provide information about the nursing home services.",
       "image": "/Administrativa.jpg",
@@ -46,7 +31,7 @@
     },
     {
       
-      "id": 4,
+      "id": 3,
       "title": "Course Manage",
       "description": "This project is a web application designed for course management. It allows users to create and manage courses.",
       "image": "/Course.jpg",
