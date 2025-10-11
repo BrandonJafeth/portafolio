@@ -10,7 +10,78 @@ import { useTranslations } from "@/hooks/useTranslations";
 
 export default function Projects() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
-  const { t } = useTranslations();
+  const { t, isLoading } = useTranslations();
+
+  // Prevent hydration mismatch by showing loading state during SSR
+  if (isLoading) {
+    return (
+      <section className="my-12 max-w-screen-xl mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {projectsData.map((project) => (
+            <div
+              key={project.id}
+              className="border border-gray-200 dark:border-gray-700 rounded-2xl 
+                         overflow-hidden bg-white dark:bg-[#232325] 
+                         flex flex-col h-full 
+                         shadow-md hover:shadow-xl 
+                         transform hover:scale-[1.02] transition-transform duration-300"
+            >
+              <div className="relative w-full h-56 overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover"
+                  loading="eager"
+                />
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="flex items-center justify-between mb-2">
+                  <h2 className="font-inter text-lg font-semibold text-gray-900 dark:text-gray-100">
+                    {project.title}
+                  </h2>
+                  <div className="flex items-center gap-2">
+                    {project.link && (
+                      <div className="font-poppins text-sm text-white bg-green-600 px-2 py-1 rounded-full flex items-center gap-1">
+                        <AiOutlineLink size={18} />
+                        <span className="hidden sm:inline">Demo</span>
+                      </div>
+                    )}
+                    {project.repo && (
+                      <div className="font-poppins text-sm text-white bg-gray-700 px-2 py-1 rounded-full flex items-center gap-1">
+                        <AiOutlineGithub size={18} />
+                        <span className="hidden sm:inline">Repo</span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <p className="font-poppins text-sm text-gray-600 dark:text-gray-200 mb-4">
+                  {project.description}
+                </p>
+                <div className="mt-auto flex flex-wrap gap-2 pt-2">
+                  {project.tags?.map((tag) => {
+                    const Icon = skillIcons[tag.name];
+                    return (
+                      <div
+                        key={tag.name}
+                        className="font-poppins text-xs bg-gray-100 dark:bg-gray-700 
+                                   text-gray-700 dark:text-gray-300 px-2 py-1 rounded-full
+                                   flex items-center gap-1"
+                      >
+                        {Icon && <Icon className="w-4 h-4" />}
+                        <span>{tag.name}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  }
 
   return (
     <motion.section
@@ -133,7 +204,7 @@ export default function Projects() {
 
                 {/* Descripción */}
                 <p className="font-poppins text-sm text-gray-600 dark:text-gray-200 mb-4">
-                  {t(`projects.project${project.id}.description`)}
+                  {t(`projects.project${project.id}.description`, project.description)}
                 </p>
 
                 {/* Tags (badges) */}

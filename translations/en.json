@@ -38,20 +38,20 @@
     "viewProject": "View project",
     "technologies": "Technologies used",
     "project1": {
-      "title": "Berry Jerry",
-      "description": "I collaborated with a colleague to develop a landing page for a vegetable store, improving their online presence."
-    },
-    "project2": {
       "title": "Nuestra Señora del Rosario",
       "description": "I developed a complete informational website for the Santa Cruz Nursing Home, collaborating with my classmates in the engineering course working on the frontend and backend."
     },
-    "project3": {
+    "project2": {
       "title": "Nuestra Señora Del Rosario - Admin",
       "description": "This repository contains the frontend code for the Santa Cruz Nursing Home project. It's a responsive web application built with modern technologies to provide information about the nursing home services."
     },
-    "project4": {
+    "project3": {
       "title": "Course Manage",
       "description": "This project is a web application designed for course management. It allows users to create and manage courses."
+    },
+    "project4": {
+      "title": "Clinic Management REST API",
+      "description": "A comprehensive REST API built with .NET for clinic management system. Features include appointment scheduling, user authentication with JWT, role-based authorization, and email notifications. Supports multiple clinic branches, appointment types, and complete CRUD operations with Entity Framework and SQL Server."
     }
   },
   "contact": {

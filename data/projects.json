@@ -42,5 +42,21 @@
         { "name": "React", "url": "https://react.dev" },
         { "name": "Node.js", "url": "https://nodejs.org/en" }
       ]
+    },
+    {
+      "id": 4,
+      "title": "Clinic Management REST API",
+      "description": "A comprehensive REST API built with .NET for clinic management system. Features include appointment scheduling, user authentication with JWT, role-based authorization, and email notifications. Supports multiple clinic branches, appointment types, and complete CRUD operations with Entity Framework and SQL Server.",
+      "image": "/Course.jpg",
+      "hoverImage": "/AddCourse.jpg",
+      "repo": "https://github.com/BrandonJafeth/Rest_Api_Clinica_3_patitos",
+      "tags": [
+        { "name": ".NET", "url": "https://dotnet.microsoft.com/" },
+        { "name": "C#", "url": "https://docs.microsoft.com/en-us/dotnet/csharp/" },
+        { "name": "Entity Framework", "url": "https://docs.microsoft.com/en-us/ef/" },
+        { "name": "SQL Server", "url": "https://www.microsoft.com/en-us/sql-server" },
+        { "name": "JWT", "url": "https://jwt.io/" },
+        { "name": "REST API", "url": "https://restfulapi.net/" }
+      ]
     }
   ]

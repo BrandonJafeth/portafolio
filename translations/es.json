@@ -38,20 +38,20 @@
     "viewProject": "Ver proyecto",
     "technologies": "Tecnologías utilizadas",
     "project1": {
-      "title": "Berry Jerry",
-      "description": "Colaboré con una amiga para desarrollar una página infórmativa para una tienda relacionada con frutas y verduras, mejorando su presencia en línea."
-    },
-    "project2": {
       "title": "Nuestra Señora del Rosario",
       "description": "Desarrollé un sitio web informativo completo para el Hogar de Ancianos de Santa Cruz, colaborando con mis compañeros de clase en el curso de ingeniería en sistemas trabajando en el frontend y backend."
     },
-    "project3": {
+    "project2": {
       "title": "Nuestra Señora Del Rosario - Admin",
       "description": "Este repositorio contiene el código frontend para el proyecto del Hogar de Ancianos de Santa Cruz. Es un sistema web construido con tecnologías modernas para gestionar la información relacionada con el hogar de ancianos."
     },
-    "project4": {
+    "project3": {
       "title": "Course Manage",
       "description": "Este proyecto es una aplicación web diseñada para gestionar cursos. Permite a los usuarios crear y administrar cursos."
+    },
+    "project4": {
+      "title": "API REST de Gestión de Clínicas",
+      "description": "Una API REST integral construida con .NET para un sistema de gestión de clínicas. Incluye programación de citas, autenticación de usuarios con JWT, autorización basada en roles y notificaciones por correo. Soporta múltiples sucursales de clínicas, tipos de citas y operaciones CRUD completas con Entity Framework y SQL Server."
     }
   },
   "contact": {

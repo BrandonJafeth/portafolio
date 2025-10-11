@@ -17,6 +17,11 @@ export function useTranslations() {
   const { language } = useLanguage();
   const [translations, setTranslations] = useState<TranslationsType>({});
   const [isLoading, setIsLoading] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
     async function loadTranslations() {
@@ -59,7 +64,7 @@ export function useTranslations() {
 
   // Función para obtener una traducción por clave
   const t = (key: string, fallback?: string): string => {
-    if (isLoading) return fallback || key;
+    if (!isMounted || isLoading) return fallback || key;
 
     try {
       const keys = key.split('.');
