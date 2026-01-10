@@ -12,28 +12,48 @@
       "url": "https://react.dev"
     },
     {
-      "name": "Next.js",
-      "url": "https://nextjs.org"
-    },
-    {
       "name": "TypeScript",
       "url": "https://www.typescriptlang.org/"
     },
     {
-      "name": "Framer Motion",
-      "url": "https://www.framer.com/motion/"
+      "name": "JavaScript",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "name": "HTML",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    {
+      "name": "CSS",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
     },
     {
       "name": "Tailwind CSS",
       "url": "https://tailwindcss.com/"
     },
     {
-      "name": "Zod",
-      "url": "https://github.com/colinhacks/zod"
+      "name": "Git",
+      "url": "https://git-scm.com/"
     },
     {
-      "name": "React Query",
-      "url": "https://react-query-v3.tanstack.com/"
+      "name": "C#",
+      "url": "https://dotnet.microsoft.com/en-us/languages/csharp"
+    },
+    {
+      "name": "MySQL",
+      "url": "https://www.mysql.com/"
+    },
+    {
+      "name": "SQL Server",
+      "url": "https://www.microsoft.com/en-us/sql-server"
+    },
+    {
+      "name": "Next.js",
+      "url": "https://nextjs.org"
+    },
+    {
+      "name": "NestJS",
+      "url": "https://nestjs.com/"
     }
   ],
   "socialLinks": {
