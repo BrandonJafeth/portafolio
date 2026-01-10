@@ -82,7 +82,7 @@
       "position": "Full Stack Developer",
       "company": "Nuestra Señora del Rosario",
       "location": "Santa Cruz, Costa Rica",
-      "period": "2024 - 2025",
+      "period": "Marzo 2024 - Junio 2025",
       "description": "Developed a complete informational website for the Santa Cruz Nursing Home, working on both frontend and backend components.",
       "technologies": [
         {
@@ -116,6 +116,18 @@
           "name": "React Query",
           "url": "https://react-query-v3.tanstack.com/"
         }
+      ]
+    },
+    {
+      "position": "Development Intern",
+      "company": "CRCCODING",
+      "location": "Heredia, Costa Rica",
+      "period": "July 2025 – November 2025",
+      "description": "Co-developed multi-company enrollment and attendance management system in Oracle APEX.",
+      "technologies": [
+        { "name": "Oracle APEX", "url": "https://apex.oracle.com" },
+        { "name": "HTML5", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+        { "name": "CSS3", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS" }
       ]
     }
   ],

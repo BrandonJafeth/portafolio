@@ -185,15 +185,20 @@ const AboutSection = () => {
         <h2 className="font-inter text-2xl font-bold text-gray-900 dark:text-white mb-6 pb-2 border-b border-gray-200 dark:border-gray-700">
           {t('about.experience')}
         </h2>
-        <ExperienceItem
-          key={0}
-          position={t('experience.item1.position')}
-          company={t('experience.item1.company')}
-          location={t('experience.item1.location')}
-          period={t('experience.item1.period')}
-          description={t('experience.item1.description')}
-          technologies={aboutData.experience[0].technologies}
-        />
+        
+        <div className="flex flex-col gap-8">
+        {aboutData.experience.map((item, index) => (
+          <ExperienceItem
+            key={index}
+            position={t(`experience.item${index + 1}.position`)}
+            company={t(`experience.item${index + 1}.company`)}
+            location={t(`experience.item${index + 1}.location`)}
+            period={t(`experience.item${index + 1}.period`)}
+            description={t(`experience.item${index + 1}.description`)}
+            technologies={item.technologies}
+          />
+        ))}
+        </div>
       </motion.div>
     </motion.section>
   );

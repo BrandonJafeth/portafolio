@@ -90,8 +90,15 @@
       "position": "Desarrollador Full Stack",
       "company": "Nuestra Señora del Rosario",
       "location": "Santa Cruz, Costa Rica",
-      "period": "2024 - 2025",
+      "period": " Marzo 2024 - Junio 2025",
       "description": "Desarrollamos con mi equipo de trabajo un sitio web informativo y un sistema administrativo completo para el Hogar de Ancianos de Santa Cruz, trabajando tanto en componentes frontend como backend, para brindarles una solución integral."
+    },
+    "item2": {
+      "position": "Pasante de Desarrollo",
+      "company": "CRCCODING",
+      "location": "Heredia, Costa Rica",
+      "period": "Julio 2025 – Noviembre 2025",
+      "description": "Co-desarrollé un sistema de gestión educativa multiempresa en Oracle APEX, implementando módulos de carga masiva y procedimientos PL/SQL. Además, diseñé interfaces responsivas para una billetera digital."
     }
   },
   "languages": {

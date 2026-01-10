@@ -13,6 +13,8 @@ import MySQL from "@/components/Icons/MySQL";
 import NestJS from "@/components/Icons/NestJS";
 import Nextjs from "@/components/Icons/Nextjs";
 import Nodejs from "@/components/Icons/Nodejs";
+import { Oracle } from "@/components/Icons/Oracle";
+import { PLSQL } from "@/components/Icons/PlSql";
 import ReactIcon from "@/components/Icons/ReactIcon";
 import ReactQuery from "@/components/Icons/ReactQuery";
 import RestApi from "@/components/Icons/RestApi";
@@ -49,4 +51,6 @@ export const skillIcons: Record<string, React.FC<React.SVGProps<SVGSVGElement>>>
   "Astro": Astro,
   "Supabase": Supabase,
   "Firebase": Firebase,
+  "Oracle APEX": Oracle,
+  "PL/SQL": PLSQL,
 };

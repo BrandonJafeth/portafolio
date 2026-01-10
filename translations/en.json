@@ -90,8 +90,15 @@
       "position": "Full Stack Developer",
       "company": "Nuestra Señora del Rosario",
       "location": "Santa Cruz, Costa Rica",
-      "period": "2024 - 2025",
+      "period": "March 2024 - June 2025",
       "description": "Developed a complete informational website for the Santa Cruz Nursing Home, working on both frontend and backend components."
+    },
+    "item2": {
+      "position": "Development Intern",
+      "company": "CRCCODING",
+      "location": "Heredia, Costa Rica",
+      "period": "July 2025 – November 2025",
+      "description": "Co-developed a multi-company educational management system in Oracle APEX, implementing bulk data upload modules and PL/SQL procedures. Also designed responsive interfaces for a digital wallet."
     }
   },
   "languages": {
