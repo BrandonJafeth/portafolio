@@ -50,8 +50,16 @@
       "description": "This project is a web application designed for course management. It allows users to create and manage courses."
     },
     "project4": {
-      "title": "Clinic Management REST API",
-      "description": "A comprehensive REST API built with .NET for clinic management system. Features include appointment scheduling, user authentication with JWT, role-based authorization, and email notifications. Supports multiple clinic branches, appointment types, and complete CRUD operations with Entity Framework and SQL Server."
+      "title": "Meta Gym",
+      "description": "Meta Gym is a landing page developed as a university project to present an integrated management software for gyms. It presents the solution's benefits, functionalities, and plans clearly."
+    },
+    "project5": {
+      "title": "Gadea Fotografía",
+      "description": "A professional photography business website focused on capturing unforgettable moments and showcasing services for various clients and events."
+    },
+    "project6": {
+      "title": "Digital Wallet",
+      "description": "A digital wallet web application for electronic money management, enabling users to perform secure operations, view transactions, and manage balances."
     }
   },
   "contact": {

@@ -1,8 +1,10 @@
 
 // components/icons/index.ts
 
+import { Astro } from "@/components/Icons/Astro";
 import C from "@/components/Icons/C";
 import CSSIcon from "@/components/Icons/CSSIcon";
+import { Firebase } from "@/components/Icons/Firebase";
 import {Git} from "@/components/Icons/Git";
 import HTML5Icon from "@/components/Icons/HTML5Icon";
 import JavaScript from "@/components/Icons/JavaScript";
@@ -15,6 +17,7 @@ import ReactIcon from "@/components/Icons/ReactIcon";
 import ReactQuery from "@/components/Icons/ReactQuery";
 import RestApi from "@/components/Icons/RestApi";
 import { MicrosoftSQLServer } from "@/components/Icons/SqlServer";
+import { Supabase } from "@/components/Icons/Supabase";
 import Tailwind from "@/components/Icons/Tailwind";
 import TypeScript from "@/components/Icons/TypeScript";
 import Zod from "@/components/Icons/Zod";
@@ -43,4 +46,7 @@ export const skillIcons: Record<string, React.FC<React.SVGProps<SVGSVGElement>>>
   "SQL Server": MicrosoftSQLServer,
   "Git": Git,
   "REST APIs": RestApi,
+  "Astro": Astro,
+  "Supabase": Supabase,
+  "Firebase": Firebase,
 };

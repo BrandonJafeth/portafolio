@@ -45,18 +45,45 @@
     },
     {
       "id": 4,
-      "title": "Clinic Management REST API",
-      "description": "A comprehensive REST API built with .NET for clinic management system. Features include appointment scheduling, user authentication with JWT, role-based authorization, and email notifications. Supports multiple clinic branches, appointment types, and complete CRUD operations with Entity Framework and SQL Server.",
-      "image": "/Course.jpg",
-      "hoverImage": "/AddCourse.jpg",
-      "repo": "https://github.com/BrandonJafeth/Rest_Api_Clinica_3_patitos",
+      "title": "Meta Gym",
+      "description": "Meta Gym is a landing page developed as a university project to present an integrated management software for gyms.",
+      "image": "/metagym.png",
+      "hoverImage": "/metagymprice.png",
+      "link": "https://meta-gym-landing.vercel.app/",
       "tags": [
-        { "name": ".NET", "url": "https://dotnet.microsoft.com/" },
-        { "name": "C#", "url": "https://docs.microsoft.com/en-us/dotnet/csharp/" },
-        { "name": "Entity Framework", "url": "https://docs.microsoft.com/en-us/ef/" },
-        { "name": "SQL Server", "url": "https://www.microsoft.com/en-us/sql-server" },
-        { "name": "JWT", "url": "https://jwt.io/" },
-        { "name": "REST API", "url": "https://restfulapi.net/" }
+        { "name": "Next.js", "url": "https://nextjs.org" },
+        { "name": "React", "url": "https://react.dev" },
+        { "name": "Firebase", "url": "https://firebase.google.com/" },
+         { "name": "Astro", "url": "https://astro.build/" },
+        { "name": "Tailwind CSS", "url": "https://tailwindcss.com/" }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Gadea Fotografía",
+      "description": "Gadea Fotografía is a website created for a professional photography business focused on capturing unforgettable moments.",
+      "image": "/gadeaiso.png",
+      "hoverImage": "/gadeaisopt.png",
+      "link": "https://www.gadeafotografia.com/",
+      "tags": [
+        { "name": "Next.js", "url": "https://nextjs.org" },
+        { "name": "React", "url": "https://react.dev" },
+         { "name": "Astro", "url": "https://astro.build/" },
+         { "name": "Supabase", "url": "https://supabase.com/" },
+        { "name": "Tailwind CSS", "url": "https://tailwindcss.com/" }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Billetera Digital",
+      "description": "A digital wallet web application designed to facilitate electronic money management.",
+      "image": "/wallet.png",
+      "hoverImage": "/walletus.png",
+      "link": "https://wallet.xerro.tech/xerro/r/crcwebsites/billetera-digital/home?session=9933895807125",
+      "tags": [
+        { "name": "HTML", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+        { "name": "CSS", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+        { "name": "Oracle APEX", "url": "https://apex.oracle.com/" }
       ]
     }
   ]

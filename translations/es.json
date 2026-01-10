@@ -50,8 +50,16 @@
       "description": "Este proyecto es una aplicación web diseñada para gestionar cursos. Permite a los usuarios crear y administrar cursos."
     },
     "project4": {
-      "title": "API REST de Gestión de Clínicas",
-      "description": "Una API REST integral construida con .NET para un sistema de gestión de clínicas. Incluye programación de citas, autenticación de usuarios con JWT, autorización basada en roles y notificaciones por correo. Soporta múltiples sucursales de clínicas, tipos de citas y operaciones CRUD completas con Entity Framework y SQL Server."
+      "title": "Meta Gym",
+      "description": "Meta Gym es una página landing desarrollada como proyecto universitario, diseñada para presentar un software de gestión integral para gimnasios."
+    },
+    "project5": {
+      "title": "Gadea Fotografía",
+      "description": "Gadea Fotografía es un sitio web creado para un negocio de fotografía profesional con enfoque en capturar momentos inolvidables."
+    },
+    "project6": {
+      "title": "Billetera Digital",
+      "description": "Este proyecto consiste en una billetera digital web diseñada para facilitar la gestión de dinero electrónico, permitiendo a los usuarios realizar operaciones de forma rápida y segura."
     }
   },
   "contact": {
