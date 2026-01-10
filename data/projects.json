@@ -50,6 +50,7 @@
       "image": "/metagym.png",
       "hoverImage": "/metagymprice.png",
       "link": "https://meta-gym-landing.vercel.app/",
+      "repo": "https://github.com/BrandonJafeth/meta-gym-landing",
       "tags": [
         { "name": "Next.js", "url": "https://nextjs.org" },
         { "name": "React", "url": "https://react.dev" },
@@ -65,6 +66,7 @@
       "image": "/gadeaiso.png",
       "hoverImage": "/gadeaisopt.png",
       "link": "https://www.gadeafotografia.com/",
+      "repo": "https://github.com/BrandonJafeth/landing-photography",
       "tags": [
         { "name": "Next.js", "url": "https://nextjs.org" },
         { "name": "React", "url": "https://react.dev" },
