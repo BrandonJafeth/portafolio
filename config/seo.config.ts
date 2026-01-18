@@ -1,11 +1,11 @@
 const SEOConfig = {
     title: 'Brandon Carrillo | Full Stack Developer',
     description: 'Portfolio of Brandon Carrillo, a Full Stack Web Developer specializing in React, Next.js, TypeScript and modern web technologies.',
-    canonical: 'https://www.brandondev.me/work',
+    canonical: 'https://www.brandondev.me',
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      url: 'https://www.brandondev.me/work',
+      url: 'https://www.brandondev.me',
       title: 'Brandon Carrillo | Full Stack Developer',
       description: 'Portfolio of Brandon Carrillo, a Full Stack Web Developer specializing in React, Next.js, TypeScript and modern web technologies.',
       images: [

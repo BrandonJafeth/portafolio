@@ -27,6 +27,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'google-site-verification=Fl9DgXBt9k7dTb2PoCQ_A1JWhPhqy14tvtmWBsx0fiI', // Reemplaza esto con tu código de Search Console
+  },
 };
 
 const inter = Inter({

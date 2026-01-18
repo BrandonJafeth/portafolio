@@ -5,21 +5,13 @@ import Image from "next/image";
 import aboutData from "@/data/about.json";
 import { useThemeToggle } from "@/hooks/useThemeToggle";
 import { useTranslations } from "@/hooks/useTranslations";
-import { useEffect, useState } from "react";
 
 import { skillIcons } from "@/lib/skillIcons";
-import EducationItem from "../about/EducationItem";
 import ExperienceItem from "../about/ExperienceItem";
-import LanguageItem from "../about/LanguageItem";
 
 const AboutSection = () => {
   const { mounted } = useThemeToggle();
   const { t } = useTranslations();
-  const [key, setKey] = useState(0);
-
-  useEffect(() => {
-    setKey(prevKey => prevKey + 1);
-  }, []);
 
   const PROFILE_IMAGE = "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1768767250/_MG_1132_xdoxnx.jpg";
 

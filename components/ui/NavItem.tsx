@@ -4,7 +4,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "@/hooks/useTranslations";
-import { useEffect, useState } from "react";
 
 interface NavItemProps {
   href: string;
