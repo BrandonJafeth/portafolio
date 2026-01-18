@@ -10,14 +10,14 @@ export default function Hero() {
   const { t } = useTranslations();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden z-10">
+    <section className="relative min-h-screen flex items-start lg:items-center justify-center overflow-hidden z-10">
       <GravityStarsBackground 
         className="absolute inset-0 z-0 opacity-30 text-primary"
         starsCount={90}
         gravityStrength={50}
       />
       
-      <div className="w-full max-w-6xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center z-10 mt-10 lg:mt-0">
+      <div className="w-full max-w-6xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center z-10 pt-28 lg:pt-0">
         
         {/* Left Column: Content */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8 order-2 lg:order-1">

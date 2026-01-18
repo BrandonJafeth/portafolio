@@ -11,6 +11,9 @@ export default function Projects() {
 
   const getTranslatedProject = (project: Project) => ({
     ...project,
+    title: isLoading
+      ? project.title
+      : t(`projects.project${project.id}.title`, project.title),
     description: isLoading 
       ? project.description 
       : t(`projects.project${project.id}.description`, project.description),
