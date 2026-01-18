@@ -45,7 +45,7 @@
 
 body {
   padding-top: env(safe-area-inset-top);
-  @apply bg-background text-foreground;
+  @apply bg-background text-foreground overflow-x-hidden;
 }
 
 /* Optimización de transiciones de tema */

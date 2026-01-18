@@ -18,7 +18,7 @@ const AboutSection = () => {
   if (!mounted) return <div className="min-h-screen" />;
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-20 lg:py-32" id="about">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-32" id="about">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
             
             {/* Left Column: Image (Sticky on Desktop) */}

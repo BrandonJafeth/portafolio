@@ -21,7 +21,7 @@ export default function Projects() {
 
   // Cofolios-like Grid: Dynamic, clean
   return (
-    <section className="py-24 max-w-6xl mx-auto px-6" id="projects">
+    <section className="py-24 max-w-6xl mx-auto px-4 sm:px-6" id="projects">
         <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
