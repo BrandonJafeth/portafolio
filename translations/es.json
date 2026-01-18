@@ -48,6 +48,14 @@
       "title": "Nuestra Señora Del Rosario - Admin",
       "description": "Este repositorio contiene el código frontend para el proyecto del Hogar de Ancianos de Santa Cruz. Es un sistema web construido con tecnologías modernas para gestionar la información relacionada con el hogar de ancianos."
     },
+    "project7": {
+      "title": "Calculadora de Metas Comerciales",
+      "description": "Aplicación diseñada para tiendas minoristas que permite calcular y distribuir metas de ventas diarias a asesores según objetivos globales, facilitando el seguimiento de tasas y KPIs."
+    },
+    "project8": {
+      "title": "Servicios de Psicología",
+      "description": "Landing page profesional diseñada para presentar servicios psicológicos, con un enfoque en diseño accesible y rendimiento optimizado."
+    },
     "project3": {
       "title": "Course Manage",
       "description": "Este proyecto es una aplicación web diseñada para gestionar cursos. Permite a los usuarios crear y administrar cursos."

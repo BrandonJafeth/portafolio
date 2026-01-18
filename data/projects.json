@@ -87,5 +87,34 @@
         { "name": "CSS", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS" },
         { "name": "Oracle APEX", "url": "https://apex.oracle.com/" }
       ]
+    },
+    {
+      "id": 7,
+      "title": "Calculadora de Metas",
+      "description": "Web application for retail stores to calculate individual sales goals based on general targets.",
+      "image": "/calcular-metas.png",
+      "hoverImage": "/calcular-metas.png",
+      "link": "https://calcular-metas.vercel.app/",
+      "repo": "https://github.com/BrandonJafeth/Calcular-Metas",
+      "tags": [
+        { "name": "React", "url": "https://react.dev" },
+        { "name": "TypeScript", "url": "https://www.typescriptlang.org/" },
+        { "name": "Tailwind CSS", "url": "https://tailwindcss.com/" },
+        {"name": "Supabase", "url": "https://supabase.com/"}
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Psychology Services",
+      "description": "A professional landing page for psychology services, focusing on accessibility and clear information.",
+      "image": "/Psicologa.png",
+      "hoverImage": "/Psicologa-map.png",
+      "link": "https://landing-psychology-peach.vercel.app/",
+      "repo": "https://github.com/BrandonJafeth/landing-psychology",
+      "tags": [
+        { "name": "Astro", "url": "https://astro.build/" },
+        { "name": "Tailwind CSS", "url": "https://tailwindcss.com/" },
+        { "name": "TypeScript", "url": "https://www.typescriptlang.org/" }
+      ]
     }
   ]
