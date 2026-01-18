@@ -116,10 +116,10 @@ const AboutSection = () => {
                         {aboutData.education.map((edu, i) => (
                             <div key={i} className="relative pl-6 border-l border-border/50">
                                 <div className="absolute top-1.5 -left-1.5 w-3 h-3 rounded-full bg-secondary border border-border" />
-                                <h4 className="font-semibold text-foreground">{edu.degree}</h4>
-                                <p className="text-sm text-primary mt-1 mb-2">{edu.institution}</p>
-                                <p className="text-sm text-muted-foreground leading-relaxed">{edu.description}</p>
-                                <span className="text-xs text-muted-foreground/60 mt-2 block">{edu.period} • {edu.location}</span>
+                                <h4 className="font-semibold text-foreground">{t(`education.item${i + 1}.degree`)}</h4>
+                                <p className="text-sm text-primary mt-1 mb-2">{t(`education.item${i + 1}.institution`)}</p>
+                                <p className="text-sm text-muted-foreground leading-relaxed">{t(`education.item${i + 1}.description`)}</p>
+                                <span className="text-xs text-muted-foreground/60 mt-2 block">{t(`education.item${i + 1}.period`)} • {t(`education.item${i + 1}.location`)}</span>
                             </div>
                         ))}
                     </div>

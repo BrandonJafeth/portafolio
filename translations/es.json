@@ -74,15 +74,23 @@
     }
   },
   "contact": {
+    "title": "Contáctame",
     "collaborationMessage": "Descarga mi currículum o contáctame para discutir oportunidades de colaboración.",
+    "name": "Nombre",
     "email": "Correo electrónico",
     "subject": "Asunto",
     "message": "Mensaje",
-    "send": "Enviar"
+    "send": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "successMessage": "¡Mensaje enviado con éxito!",
+    "errorMessage": "Algo salió mal. Por favor intenta de nuevo.",
+    "contactInfo": "Información de Contacto",
+    "location": "Ubicación",
+    "socials": "Redes Sociales"
   },
   "education": {
     "item1": {
-      "degree": "Bachillerato en Ingeniería de Sistemas",
+      "degree": "Bachillerato en Ingeniería en Sistemas de Información",
       "institution": "Universidad Nacional de Costa Rica",
       "location": "Nicoya, Costa Rica",
       "period": "2022 - 2025",

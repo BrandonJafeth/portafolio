@@ -72,11 +72,19 @@
     }
   },
   "contact": {
+    "title": "Contact Me",
     "collaborationMessage": "Download my resume or reach out to discuss collaboration opportunities.",
+    "name": "Name",
     "email": "Email",
     "subject": "Subject",
     "message": "Message",
-    "send": "Send"
+    "send": "Send Message",
+    "sending": "Sending...",
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "Something went wrong. Please try again.",
+    "contactInfo": "Contact Info",
+    "location": "Location",
+    "socials": "Social Profiles"
   },
   "education": {
     "item1": {
