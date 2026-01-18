@@ -20,7 +20,8 @@
   },
   "hero": {
     "greeting": "Hola, soy Brandon",
-    "introduction": "Como estudiante de desarrollo web, me apasiona convertir ideas en experiencias digitales impactantes. Diseño interfaces intuitivas y adaptables, combinando creatividad y código para ofrecer interacciones fluidas y cautivadoras."
+    "introduction": "Como desarrollador web, me apasiona convertir ideas en experiencias digitales impactantes. Diseño interfaces intuitivas y adaptables, combinando creatividad y código para ofrecer interacciones naturales y efectivas.",
+    "available": "Disponible para nuevos proyectos"
   },
   "about": {
     "role": "Desarrollador Full Stack | Entusiasta Web",
@@ -29,7 +30,7 @@
     "education": "Educación",
     "experience": "Experiencia Laboral",
     "location": "Ubicado en Costa Rica",
-    "summary": "En mi camino como estudiante de desarrollo web, he descubierto el poder de diseñar interfaces que forjan conexiones reales. Me especializo en construir soluciones digitales intuitivas y responsivas que combinan tecnología y diseño para crear experiencias memorables.",
+    "summary": "En mi camino como desarrollador web, he descubierto el poder de diseñar interfaces que forjan conexiones reales. Me especializo en construir soluciones digitales intuitivas y responsivas que combinan tecnología y diseño para crear experiencias memorables.",
     "longDescription": "Me especializo en construir aplicaciones web modernas y escalables, enfocándome en código limpio y excelentes experiencias de usuario. Mi viaje comenzó con una curiosidad por la tecnología y un deseo de crear soluciones que generen impacto."
   },
   "projects": {
@@ -108,7 +109,7 @@
     },
     "english": {
       "language": "Inglés",
-      "proficiency": "Intermedio - mejorando activamente"
+      "proficiency": "Básico - mejorando activamente"
     }
   },
   "footer": {

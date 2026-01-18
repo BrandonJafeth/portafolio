@@ -1,238 +1,54 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { useState } from "react";
-import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
 import projectsData from "@/data/projects.json";
-import { skillIcons } from "@/lib/skillIcons";
 import { useTranslations } from "@/hooks/useTranslations";
+import { ProjectCard } from "@/components/ui/ProjectCard";
+import { Project } from "@/types/project";
 
 export default function Projects() {
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
   const { t, isLoading } = useTranslations();
 
-  // Prevent hydration mismatch by showing loading state during SSR
-  if (isLoading) {
-    return (
-      <section className="my-12 max-w-screen-xl mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {projectsData.map((project) => (
-            <div
-              key={project.id}
-              className="border border-gray-200 dark:border-gray-700 rounded-2xl 
-                         overflow-hidden bg-white dark:bg-[#232325] 
-                         flex flex-col h-full 
-                         shadow-md hover:shadow-xl 
-                         transform hover:scale-[1.02] transition-transform duration-300"
-            >
-              <div className="relative w-full h-56 overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover"
-                  loading="eager"
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <div className="flex items-center justify-between mb-2">
-                  <h2 className="font-inter text-lg font-semibold text-gray-900 dark:text-gray-100">
-                    {project.title}
-                  </h2>
-                  <div className="flex items-center gap-2">
-                    {project.link && (
-                      <div className="font-poppins text-sm text-white bg-green-600 px-2 py-1 rounded-full flex items-center gap-1">
-                        <AiOutlineLink size={18} />
-                        <span className="hidden sm:inline">Demo</span>
-                      </div>
-                    )}
-                    {project.repo && (
-                      <div className="font-poppins text-sm text-white bg-gray-700 px-2 py-1 rounded-full flex items-center gap-1">
-                        <AiOutlineGithub size={18} />
-                        <span className="hidden sm:inline">Repo</span>
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <p className="font-poppins text-sm text-gray-600 dark:text-gray-200 mb-4">
-                  {project.description}
-                </p>
-                <div className="mt-auto flex flex-wrap gap-2 pt-2">
-                  {project.tags?.map((tag) => {
-                    const Icon = skillIcons[tag.name];
-                    return (
-                      <div
-                        key={tag.name}
-                        className="font-poppins text-xs bg-gray-100 dark:bg-gray-700 
-                                   text-gray-700 dark:text-gray-300 px-2 py-1 rounded-full
-                                   flex items-center gap-1"
-                      >
-                        {Icon && <Icon className="w-4 h-4" />}
-                        <span>{tag.name}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    );
-  }
+  const getTranslatedProject = (project: Project) => ({
+    ...project,
+    description: isLoading 
+      ? project.description 
+      : t(`projects.project${project.id}.description`, project.description),
+  });
 
+  // Cofolios-like Grid: Dynamic, clean
   return (
-    <motion.section
-      className="my-12 max-w-screen-xl mx-auto px-4"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-    >
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        {projectsData.map((project, index) => {
-          const isHovered = hoveredProject === project.id;
-          const projectLink = project.link || project.repo;
+    <section className="py-24 max-w-6xl mx-auto px-6" id="projects">
+        <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-16"
+        >
+            <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-muted-foreground">
+                Selected Work
+            </h2>
+        </motion.div>
 
-          return (
-            <motion.div
-              key={project.id}
-              className="border border-gray-200 dark:border-gray-700 rounded-2xl 
-                         overflow-hidden bg-white dark:bg-[#232325] 
-                         flex flex-col h-full 
-                         shadow-md hover:shadow-xl 
-                         transform hover:scale-[1.02] transition-transform duration-300"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{
-                delay: index * 0.1,
-                duration: 0.6,
-                ease: "easeOut",
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
+        {projectsData.map((project, index) => (
+          <motion.div
+            key={project.id}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+            <ProjectCard
+              project={getTranslatedProject(project as Project)}
+              t={{
+                demo: isLoading ? "Demo" : t("projects.demo", "Demo"),
+                repo: isLoading ? "Repo" : t("projects.repo", "Repo"),
               }}
-              viewport={{ once: true }}
-            >
-              {/* Imagen de cabecera siempre clickeable, redirije a demo o a repo */}
-              <a
-                href={projectLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative w-full h-56 block overflow-hidden cursor-pointer"
-                onMouseEnter={() => setHoveredProject(project.id)}
-                onMouseLeave={() => setHoveredProject(null)}
-              >
-                <motion.div
-                  className="absolute inset-0 w-full h-full"
-                  initial={false}
-                  animate={{
-                    opacity: isHovered ? 0 : 1,
-                  }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover"
-                    loading="eager"
-                  />
-                </motion.div>
-
-                <motion.div
-                  className="absolute inset-0 w-full h-full"
-                  initial={false}
-                  animate={{
-                    opacity: isHovered ? 1 : 0,
-                  }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <Image
-                    src={project.hoverImage}
-                    alt={`${project.title} - hover`}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover"
-                    loading="eager"
-                  />
-                </motion.div>
-              </a>
-
-              {/* Contenido interior */}
-              <div className="p-6 flex flex-col flex-grow">
-                {/* Título + iconos de links */}
-                <div className="flex items-center justify-between mb-2">
-                  <h2 className="font-inter text-lg font-semibold text-gray-900 dark:text-gray-100">
-                    {project.title}
-                  </h2>
-                  <div className="flex items-center gap-2">
-                    {project.link && (
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`Ver el proyecto ${project.title}`}
-                        className="font-poppins text-sm
-                                   text-white bg-green-600 
-                                   hover:bg-green-500
-                                   transition-colors px-2 py-1 
-                                   rounded-full flex items-center gap-1"
-                      >
-                        <AiOutlineLink size={18} />
-                        <span className="hidden sm:inline">{t('projects.demo')}</span>
-                      </a>
-                    )}
-                    {project.repo && (
-                      <a
-                        href={project.repo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`Repositorio GitHub para ${project.title}`}
-                        className="font-poppins text-sm 
-                                   text-white bg-gray-700
-                                   hover:bg-gray-600
-                                   transition-colors px-2 py-1 
-                                   rounded-full flex items-center gap-1"
-                      >
-                        <AiOutlineGithub size={18} />
-                        <span className="hidden sm:inline">{t('projects.repo')}</span>
-                      </a>
-                    )}
-                  </div>
-                </div>
-
-                {/* Descripción */}
-                <p className="font-poppins text-sm text-gray-600 dark:text-gray-200 mb-4">
-                  {t(`projects.project${project.id}.description`, project.description)}
-                </p>
-
-                {/* Tags (badges) */}
-                <div className="mt-auto flex flex-wrap gap-2 pt-2">
-                  {project.tags?.map((tag) => {
-                    const Icon = skillIcons[tag.name];
-                    return (
-                      <a
-                        key={tag.name}
-                        href={tag.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-poppins text-xs bg-gray-100 dark:bg-gray-700 
-                                   text-gray-700 dark:text-gray-300 px-2 py-1 rounded-full
-                                   flex items-center gap-1 hover:bg-gray-200
-                                   dark:hover:bg-gray-600 transition-colors"
-                      >
-                        {Icon && <Icon className="w-4 h-4" />}
-                        <span>{tag.name}</span>
-                      </a>
-                    );
-                  })}
-                </div>
-              </div>
-            </motion.div>
-          );
-        })}
+            />
+          </motion.div>
+        ))}
       </div>
-    </motion.section>
+    </section>
   );
 }

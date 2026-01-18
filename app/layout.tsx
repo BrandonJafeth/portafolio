@@ -7,6 +7,8 @@ import Footer from "@/components/layout/Footer";
 import { LanguageProvider } from "@/context/language/LanguageProvider";
 import type { Metadata } from 'next';
 import SEOConfig from "@/config/seo.config";
+import { cookies } from "next/headers";
+import type { Language } from "@/context/language/LanguageContext";
 
 export const metadata: Metadata = {
   title: SEOConfig.title,
@@ -52,14 +54,17 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const cookieStore = await cookies();
+  const language = (cookieStore.get('language')?.value || 'en') as Language;
+
   return (
     <html
-      lang="en"
+      lang={language}
       className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppins.variable}`}
       suppressHydrationWarning
     >
@@ -67,8 +72,8 @@ export default function RootLayout({
         <link rel="icon" href="/sun-svgrepo-com.svg" type="image/png" />
       </head>
       <body className="antialiased min-h-screen flex flex-col">
-        <ThemeProvider attribute="class" defaultTheme="system">
-          <LanguageProvider>
+        <ThemeProvider attribute="class" defaultTheme="dark" forceTheme="dark">
+          <LanguageProvider initialLanguage={language}>
             <Header />
             <main className="flex-grow">{children}</main>
             <Footer />

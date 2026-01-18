@@ -23,13 +23,13 @@ export default function Header() {
   const toggleLanguageMenu = () => setIsLanguageOpen((prev) => !prev);
 
   return (
-    <header role="banner">
+    <header role="banner" className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 transition-all duration-300 pointer-events-none">
       <nav
         aria-label="Main navigation"
-        className="max-w-screen-xl mx-auto px-4 py-3 relative z-50"
+        className="w-full max-w-screen-xl relative z-50 pointer-events-auto"
       >
-        <div className="w-full flex items-center justify-between px-6 py-2 sm:border sm:border-gray-600 dark:sm:border-white sm:rounded-full bg-transparent">
-          <Link href="/" className="font-semibold text-xl text-foreground">
+        <div className="w-full flex items-center justify-between px-6 py-3 border border-white/10 bg-background/60 backdrop-blur-xl rounded-full shadow-lg transition-all duration-300">
+          <Link href="/" className="font-bold text-xl text-foreground tracking-tight hover:text-primary transition-colors">
             BC
           </Link>
 
@@ -57,7 +57,7 @@ export default function Header() {
               <motion.button
                 variants={iconVariants}
                 whileTap="tap"
-                className="flex items-center gap-1 text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+                className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300"
                 onClick={toggleLanguageMenu}
                 aria-label="Change language"
               >
@@ -73,12 +73,16 @@ export default function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute right-0 mt-2 w-28 bg-white dark:bg-gray-800 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 p-1 z-50"
+                    className="absolute right-0 mt-2 w-32 bg-popover border border-border rounded-lg shadow-xl p-1 z-50 overflow-hidden"
                   >
                     <ul>
                       <li>
                         <button
-                          className={`w-full text-left px-4 py-2 text-sm rounded-md ${language === 'en' ? 'bg-green-100 dark:bg-green-600 text-green-600 dark:text-green-100' : 'hover:bg-gray-100 dark:hover:bg-gray-700'}`}
+                          className={`w-full text-left px-4 py-2 text-sm rounded-md transition-colors ${
+                            language === 'en' 
+                              ? 'bg-primary/20 text-primary font-medium' 
+                              : 'text-foreground hover:bg-muted'
+                          }`}
                           onClick={() => {
                             setLanguage('en');
                             setIsLanguageOpen(false);
@@ -89,7 +93,11 @@ export default function Header() {
                       </li>
                       <li>
                         <button
-                          className={`w-full text-left px-4 py-2 text-sm rounded-md ${language === 'es' ? 'bg-green-100 dark:bg-green-600 text-green-600 dark:text-green-100' : 'hover:bg-gray-100 dark:hover:bg-gray-700'}`}
+                          className={`w-full text-left px-4 py-2 text-sm rounded-md transition-colors ${
+                            language === 'es' 
+                              ? 'bg-primary/20 text-primary font-medium' 
+                              : 'text-foreground hover:bg-muted'
+                          }`}
                           onClick={() => {
                             setLanguage('es');
                             setIsLanguageOpen(false);
@@ -129,15 +137,15 @@ export default function Header() {
                 initial="hidden"
                 animate="visible"
                 exit="hidden"
-                className="h-full w-full bg-background shadow-lg pointer-events-auto"
+                className="h-full w-full bg-background/95 backdrop-blur-xl border-l border-border shadow-2xl pointer-events-auto"
               >
-                <div className="flex items-center justify-between p-4 border-b border-gray-300 dark:border-gray-700"> 
-                  <span className="font-semibold text-xl text-foreground">BC</span>
+                <div className="flex items-center justify-between p-4 border-b border-border"> 
+                  <span className="font-bold text-xl text-foreground">BC</span>
                   <motion.button
                     variants={iconVariants}
                     whileTap="tap"
                     type="button"
-                    className="text-gray-500 dark:text-gray-300 transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
                     onClick={toggleMenu}
                     aria-label="Close navigation"
                   >
@@ -166,21 +174,29 @@ export default function Header() {
                     initial="hidden"
                     animate="visible"
                     exit="hidden"
-                    className="mt-2 border-t border-gray-200 dark:border-gray-700 pt-4"
+                    className="mt-4 border-t border-border pt-4"
                   >
                     <div>
-                      <p className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">
+                      <p className="text-sm font-medium text-muted-foreground mb-3">
                         {language === 'en' ? 'Language' : 'Idioma'}
                       </p>
-                      <div className="flex gap-2">
+                      <div className="flex gap-3">
                         <button
-                          className={`px-4 py-2 text-sm rounded-md flex-1 ${language === 'en' ? 'bg-green-100 dark:bg-green-600 text-green-600 dark:text-green-100' : 'bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700'}`}
+                          className={`px-4 py-2.5 text-sm rounded-lg flex-1 transition-all duration-200 ${
+                            language === 'en' 
+                              ? 'bg-primary/20 text-primary font-bold border border-primary/20 shadow-sm' 
+                              : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                          }`}
                           onClick={() => setLanguage('en')}
                         >
                           EN
                         </button>
                         <button
-                          className={`px-4 py-2 text-sm rounded-md flex-1 ${language === 'es' ? 'bg-green-100 dark:bg-green-600 text-green-600 dark:text-green-100' : 'bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700'}`}
+                          className={`px-4 py-2.5 text-sm rounded-lg flex-1 transition-all duration-200 ${
+                            language === 'es' 
+                              ? 'bg-primary/20 text-primary font-bold border border-primary/20 shadow-sm' 
+                              : 'bg-muted text-muted-foreground hover:bg-muted/80'
+                          }`}
                           onClick={() => setLanguage('es')}
                         >
                           ES

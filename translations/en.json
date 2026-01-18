@@ -20,7 +20,8 @@
   },
   "hero": {
     "greeting": "Hi, I'm Brandon",
-    "introduction": "As a web development student, I'm passionate about turning ideas into impactful digital experiences. I design intuitive and adaptable interfaces, blending creativity and code to deliver smooth and captivating interactions."
+    "introduction": "As a web developer, I'm passionate about turning ideas into impactful digital experiences. I design intuitive and adaptable interfaces, combining creativity and code to deliver natural and effective interactions.",
+    "available": "Available for new projects"
   },
   "about": {
     "role": "Full Stack Developer | Web Enthusiast",
@@ -29,7 +30,7 @@
     "education": "Education",
     "experience": "Work Experience",
     "location": "Based in Costa Rica",
-    "summary": "In my journey as a web development student, I have discovered the power of designing interfaces that forge real connections. I specialize in building intuitive and responsive digital solutions that blend technology and design to create memorable experiences.",
+    "summary": "In my journey as a web developer, I have discovered the power of designing interfaces that forge real connections. I specialize in building intuitive and responsive digital solutions that blend technology and design to create memorable experiences.",
     "longDescription": "I specialize in building modern and scalable web applications, focusing on clean code and great user experiences. My journey started with a curiosity about technology and a desire to create solutions that make an impact."
   },
   "projects": {
@@ -108,7 +109,7 @@
     },
     "english": {
       "language": "English",
-      "proficiency": "Intermediate - actively improving"
+      "proficiency": "Basic - actively improving"
     }
   },
   "footer": {

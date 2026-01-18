@@ -18,29 +18,26 @@ const ExperienceItem = ({
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
     >
-      <h3 className="font-inter text-lg font-semibold text-gray-900 dark:text-gray-100">{position}</h3>
-      <div className="flex justify-between items-center mt-1">
-        <p className="font-poppins text-md font-medium text-green-500">{company}, {location}</p>
-       
-      </div>
-      <p className="font-poppins mt-2 text-gray-600 dark:text-gray-200">{description}</p>
-      <p className="font-poppins text-sm text-gray-600 dark:text-gray-200">{period}</p>
+      <h3 className="font-inter text-xl font-bold text-foreground/90">{position}</h3>
+      <p className="font-poppins text-base font-semibold text-primary mt-1">{company}</p> {/* Green via text-primary */}
+      
+      <p className="font-poppins mt-3 text-muted-foreground leading-relaxed">{description}</p>
+      <p className="font-poppins text-xs font-medium text-muted-foreground/60 mt-1 uppercase tracking-wider">{period} • {location}</p>
       
       {/* Tecnologías utilizadas */}
-      <div className="mt-3 flex flex-wrap gap-2">
+      <div className="mt-4 flex flex-wrap gap-2">
         {technologies.map((tech) => {
-          const Icon = skillIcons[tech.name];
+          const Icon = skillIcons[tech.name] || skillIcons["Default"];
           return (
             <a 
               key={tech.name}
               href={tech.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 text-xs px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full
-                        hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              className="flex items-center gap-1.5 px-3 py-1.5 bg-secondary/50 border border-transparent hover:border-border rounded-full transition-colors group"
             >
-              {Icon && <Icon className="w-4 h-4" />}
-              <span>{tech.name}</span>
+              <Icon className="w-3.5 h-3.5 text-muted-foreground group-hover:text-foreground" />
+              <span className="text-xs font-medium text-muted-foreground group-hover:text-foreground">{tech.name}</span>
             </a>
           );
         })}

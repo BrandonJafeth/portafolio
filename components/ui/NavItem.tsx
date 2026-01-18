@@ -14,13 +14,6 @@ interface NavItemProps {
 export default function NavItem({ href, label }: NavItemProps) {
   const { t } = useTranslations();
   const pathname = usePathname();
-  // Usamos useState para evitar inconsistencias de hidratación
-  const [mounted, setMounted] = useState(false);
-  
-  // useEffect solo se ejecuta en el cliente
-  useEffect(() => {
-    setMounted(true);
-  }, []);
   
   const isActive = pathname === href;
   const translatedLabel = t(`nav.${label.toLowerCase()}`, label);
@@ -28,21 +21,17 @@ export default function NavItem({ href, label }: NavItemProps) {
   return (
     <Link
       href={href}
-      className={`text-sm font-medium block relative group transition-colors ${
-        mounted && isActive
-          ? "text-gray-900 dark:text-gray-100" 
-          : "text-gray-500 dark:text-gray-400 sm:hover:text-gray-700 dark:sm:hover:text-gray-300" 
+      className={`text-sm font-medium block relative group transition-colors duration-300 ${
+        isActive
+          ? "text-primary" 
+          : "text-muted-foreground hover:text-foreground" 
       }`}
     >
       {translatedLabel}
    
-      {/* Solo renderizamos el indicador cuando el componente está montado */}
-      {mounted && (
-        <span
-          className="absolute bottom-0 left-0 w-full h-0.5 bg-gray-400 dark:bg-gray-500 transition-transform origin-left duration-300 sm:group-hover:scale-x-100 sm:block hidden"
-          style={{ transform: isActive ? 'scaleX(1)' : 'scaleX(0)' }}
-        ></span>
-      )}
+      <span
+        className={`absolute -bottom-1 left-0 w-full h-0.5 bg-primary/80 shadow-[0_0_8px_rgba(34,197,89,0.5)] transition-transform origin-left duration-300 sm:group-hover:scale-x-100 ${isActive ? 'scale-x-100 block' : 'scale-x-0 hidden sm:block'}`}
+      ></span>
     </Link>
   );
 }
