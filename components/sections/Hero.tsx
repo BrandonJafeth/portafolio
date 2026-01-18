@@ -17,19 +17,19 @@ export default function Hero() {
         gravityStrength={50}
       />
       
-      <div className="w-full max-w-6xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center z-10 pt-28 lg:pt-0">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 lg:gap-20 items-center z-10 pt-24 lg:pt-0">
         
         {/* Left Column: Content */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8 order-2 lg:order-1">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 lg:space-y-8 order-2 lg:order-1">
             <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="font-inter text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-[1.1]"
+                className="font-inter text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-[1.1]"
             >
                 {t('hero.greeting')}
                 <motion.div
-                    className="inline-block ml-4 align-middle"
+                    className="inline-block ml-3 sm:ml-4 align-middle"
                     initial={{ scale: 0 }}
                     animate={{ scale: 1, rotate: 360 }}
                     transition={{
@@ -37,7 +37,7 @@ export default function Hero() {
                         rotate: { duration: 20, repeat: Infinity, ease: "linear" }
                     }}
                 >
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 md:w-16 md:h-16">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16">
                         <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z" fill="url(#spark-gradient)" />
                         <defs>
                             <linearGradient id="spark-gradient" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
@@ -53,7 +53,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed max-w-xl"
+                className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-light leading-relaxed max-w-xl"
             >
                 {t('hero.introduction')}
             </motion.p>
