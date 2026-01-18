@@ -86,7 +86,13 @@
     "errorMessage": "Algo salió mal. Por favor intenta de nuevo.",
     "contactInfo": "Información de Contacto",
     "location": "Ubicación",
-    "socials": "Redes Sociales"
+    "socials": "Redes Sociales",
+    "placeholders": {
+      "name": "Juan Pérez",
+      "email": "juan@ejemplo.com",
+      "subject": "Propuesta de Proyecto",
+      "message": "Cuéntame sobre tu proyecto..."
+    }
   },
   "education": {
     "item1": {

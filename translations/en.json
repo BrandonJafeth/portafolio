@@ -84,7 +84,13 @@
     "errorMessage": "Something went wrong. Please try again.",
     "contactInfo": "Contact Info",
     "location": "Location",
-    "socials": "Social Profiles"
+    "socials": "Social Profiles",
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "subject": "Project Proposal",
+      "message": "Tell me about your project..."
+    }
   },
   "education": {
     "item1": {

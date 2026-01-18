@@ -16,6 +16,7 @@ export default function Contact() {
     message: ""
   });
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -25,6 +26,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('sending');
+    setErrorMessage("");
 
     try {
       const res = await fetch('/api/send', {
@@ -32,6 +34,8 @@ export default function Contact() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
       });
+      
+      const data = await res.json();
 
       if (res.ok) {
         setStatus('success');
@@ -39,9 +43,15 @@ export default function Contact() {
         setTimeout(() => setStatus('idle'), 5000);
       } else {
         setStatus('error');
+        if (data.error) {
+           setErrorMessage(data.error);
+        } else {
+           setErrorMessage(t("contact.errorMessage"));
+        }
       }
-    } catch (error) {
+    } catch {
       setStatus('error');
+      setErrorMessage(t("contact.errorMessage"));
     }
   };
 
@@ -139,7 +149,7 @@ export default function Contact() {
                             type="text"
                             id="name"
                             name="name"
-                            placeholder="John Doe"
+                            placeholder={t("contact.placeholders.name")}
                             value={form.name}
                             onChange={handleChange}
                             className="w-full px-4 py-3 rounded-xl bg-background/50 border border-border/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all focus:bg-background"
@@ -152,7 +162,7 @@ export default function Contact() {
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="john@example.com"
+                            placeholder={t("contact.placeholders.email")}
                             value={form.email}
                             onChange={handleChange}
                             className="w-full px-4 py-3 rounded-xl bg-background/50 border border-border/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all focus:bg-background"
@@ -167,7 +177,7 @@ export default function Contact() {
                         type="text"
                         id="subject"
                         name="subject"
-                        placeholder="Project Proposal"
+                        placeholder={t("contact.placeholders.subject")}
                         value={form.subject}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl bg-background/50 border border-border/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all focus:bg-background"
@@ -181,7 +191,7 @@ export default function Contact() {
                         id="message"
                         name="message"
                         rows={5}
-                        placeholder="Tell me about your project..."
+                        placeholder={t("contact.placeholders.message")}
                         value={form.message}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-xl bg-background/50 border border-border/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all focus:bg-background resize-none"
@@ -220,7 +230,7 @@ export default function Contact() {
                         animate={{ opacity: 1, y: 0 }}
                         className="text-red-500 text-center text-sm font-medium bg-red-500/10 py-2 rounded-lg"
                     >
-                        {t("contact.errorMessage")}
+                        {errorMessage || t("contact.errorMessage")}
                     </motion.p>
                 )}
             </form>
