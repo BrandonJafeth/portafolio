@@ -72,7 +72,7 @@ export default async function RootLayout({
         <link rel="icon" href="/sun-svgrepo-com.svg" type="image/png" />
       </head>
       <body className="antialiased min-h-screen flex flex-col">
-        <ThemeProvider attribute="class" defaultTheme="dark" forceTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <LanguageProvider initialLanguage={language}>
             <Header />
             <main className="flex-grow">{children}</main>

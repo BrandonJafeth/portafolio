@@ -121,12 +121,12 @@ export default function Hero() {
 
       </div>
       
-      {/* Scroll Down Indicator */}
+      {/* Scroll Down Indicator - Hidden on mobile to prevent overlap */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden md:block"
       >
         <ScrollIndicator />
       </motion.div>

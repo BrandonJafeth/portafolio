@@ -26,7 +26,7 @@ export default function Projects() {
             className="mb-16"
         >
             <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-muted-foreground">
-                Selected Work
+                {t('projects.title')}
             </h2>
         </motion.div>
 
@@ -44,6 +44,7 @@ export default function Projects() {
               t={{
                 demo: isLoading ? "Demo" : t("projects.demo", "Demo"),
                 repo: isLoading ? "Repo" : t("projects.repo", "Repo"),
+                visit: isLoading ? "Visit Site" : t("projects.visit", "Visit Site"),
               }}
             />
           </motion.div>

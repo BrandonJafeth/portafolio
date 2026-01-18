@@ -34,9 +34,9 @@
     "longDescription": "I specialize in building modern and scalable web applications, focusing on clean code and great user experiences. My journey started with a curiosity about technology and a desire to create solutions that make an impact."
   },
   "projects": {
+    "title": "Selected Work",
     "demo": "Demo",
-    "repo": "Repo",
-    "viewProject": "View project",
+    "repo": "Repo",    "visit": "Visit Site",    "viewProject": "View project",
     "technologies": "Technologies used",
     "project1": {
       "title": "Nuestra Señora del Rosario",

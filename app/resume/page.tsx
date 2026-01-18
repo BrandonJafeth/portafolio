@@ -11,9 +11,7 @@ export default function ResumePage() {
       <div className="w-full max-w-6xl flex flex-col space-y-6">
         
         {/* Header Actions */}
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 px-2">
-       
-          
+        <div className="w-full flex justify-end items-center px-2">
           <a 
             href="/BrandonCarrillo_Cv.pdf" 
             download
