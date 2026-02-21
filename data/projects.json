@@ -1,120 +1,230 @@
 [
-    
-    {
-      "id": 1,
-      "title": "Nuestra Señora del Rosario",
-      "description": "I developed a complete informational website for the Santa Cruz Nursing Home, collaborating with my classmates in the engineering course working on the frontend and backend.",
-      "image": "/Proyect.avif",
-      "hoverImage": "/Voluntariado.jpg",
-      "link": "https://nuestrasenorainformativo.com/",
-      "repo": "https://github.com/BrandonJafeth/Nuestra-Senora-Del-Rosario-Frontend",
-      "tags": [
-        { "name": "React",   "url": "https://react.dev" },
-        { "name": "Node.js", "url": "https://nodejs.org/en" },
-        { "name" : "C#", "url": "https://docs.microsoft.com/en-us/dotnet/csharp/" },
-        { "name": "MySQL", "url": "https://www.mysql.com/" }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Nuestra Señora Del Rosario - Admin",
-      "description": "This repository contains the frontend code for the Santa Cruz Nursing Home project. It's a responsive web application built with modern technologies to provide information about the nursing home services.",
-      "image": "/Administrativa.jpg",
-      "hoverImage": "/Admin 2.jpg",
-      "repo": "https://github.com/BrandonJafeth/Nuestra-Senora-Del-Rosario-Frontend",
-      "tags": [
-        { "name": "React", "url": "https://react.dev" },
-        { "name": "Node.js", "url": "https://nodejs.org/en" },
-        { "name": "C#", "url": "https://docs.microsoft.com/en-us/dotnet/csharp/" },
-        { "name": "MySQL", "url": "https://www.mysql.com/" }
-      ]
-    },
-    {
-      
-      "id": 3,
-      "title": "Course Manage",
-      "description": "This project is a web application designed for course management. It allows users to create and manage courses.",
-      "image": "/Course.jpg",
-      "hoverImage": "/AddCourse.jpg",
-      "link": "https://courses-manage2.vercel.app/",
-      "repo": "https://github.com/BrandonJafeth/Courses-Manage",
-      "tags": [
-        { "name": "React", "url": "https://react.dev" },
-        { "name": "Node.js", "url": "https://nodejs.org/en" }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Meta Gym",
-      "description": "Meta Gym is a landing page developed as a university project to present an integrated management software for gyms.",
-      "image": "/metagym.png",
-      "hoverImage": "/metagymprice.png",
-      "link": "https://meta-gym-landing.vercel.app/",
-      "repo": "https://github.com/BrandonJafeth/meta-gym-landing",
-      "tags": [
-        { "name": "Next.js", "url": "https://nextjs.org" },
-        { "name": "React", "url": "https://react.dev" },
-        { "name": "Firebase", "url": "https://firebase.google.com/" },
-         { "name": "Astro", "url": "https://astro.build/" },
-        { "name": "Tailwind CSS", "url": "https://tailwindcss.com/" }
-      ]
-    },
-    {
-      "id": 5,
-      "title": "Gadea Fotografía",
-      "description": "Gadea Fotografía is a website created for a professional photography business focused on capturing unforgettable moments.",
-      "image": "/gadeaiso.png",
-      "hoverImage": "/gadeaisopt.png",
-      "link": "https://www.gadeafotografia.com/",
-      "repo": "https://github.com/BrandonJafeth/landing-photography",
-      "tags": [
-        { "name": "Next.js", "url": "https://nextjs.org" },
-        { "name": "React", "url": "https://react.dev" },
-         { "name": "Astro", "url": "https://astro.build/" },
-         { "name": "Supabase", "url": "https://supabase.com/" },
-        { "name": "Tailwind CSS", "url": "https://tailwindcss.com/" }
-      ]
-    },
-    {
-      "id": 6,
-      "title": "Billetera Digital",
-      "description": "A digital wallet web application designed to facilitate electronic money management.",
-      "image": "/wallet.png",
-      "hoverImage": "/walletus.png",
-      "link": "https://wallet.xerro.tech/xerro/r/crcwebsites/billetera-digital/home?session=9933895807125",
-      "tags": [
-        { "name": "HTML", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-        { "name": "CSS", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS" },
-        { "name": "Oracle APEX", "url": "https://apex.oracle.com/" }
-      ]
-    },
-    {
-      "id": 7,
-      "title": "Calculadora de Metas",
-      "description": "Web application for retail stores to calculate individual sales goals based on general targets.",
-      "image": "/calcular-metas.png",
-      "hoverImage": "/calcular-metas.png",
-      "link": "https://calcular-metas.vercel.app/",
-      "repo": "https://github.com/BrandonJafeth/Calcular-Metas",
-      "tags": [
-        { "name": "React", "url": "https://react.dev" },
-        { "name": "TypeScript", "url": "https://www.typescriptlang.org/" },
-        { "name": "Tailwind CSS", "url": "https://tailwindcss.com/" },
-        {"name": "Supabase", "url": "https://supabase.com/"}
-      ]
-    },
-    {
-      "id": 8,
-      "title": "Psychology Services",
-      "description": "A professional landing page for psychology services, focusing on accessibility and clear information.",
-      "image": "/Psicologa.png",
-      "hoverImage": "/Psicologa-map.png",
-      "link": "https://landing-psychology-peach.vercel.app/",
-      "repo": "https://github.com/BrandonJafeth/landing-psychology",
-      "tags": [
-        { "name": "Astro", "url": "https://astro.build/" },
-        { "name": "Tailwind CSS", "url": "https://tailwindcss.com/" },
-        { "name": "TypeScript", "url": "https://www.typescriptlang.org/" }
-      ]
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Nuestra Señora del Rosario",
+    "description": "I developed a complete informational website for the Santa Cruz Nursing Home, collaborating with my classmates in the engineering course working on the frontend and backend.",
+    "image": "/Proyect.avif",
+    "hoverImage": "/Voluntariado.jpg",
+    "link": "https://nuestrasenorainformativo.com/",
+    "repo": "https://github.com/BrandonJafeth/Nuestra-Senora-Del-Rosario-Frontend",
+    "tags": [
+      {
+        "name": "React",
+        "url": "https://react.dev"
+      },
+      {
+        "name": "Node.js",
+        "url": "https://nodejs.org/en"
+      },
+      {
+        "name": "C#",
+        "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+      },
+      {
+        "name": "MySQL",
+        "url": "https://www.mysql.com/"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Nuestra Señora Del Rosario - Admin",
+    "description": "This repository contains the frontend code for the Santa Cruz Nursing Home project. It's a responsive web application built with modern technologies to provide information about the nursing home services.",
+    "image": "/Administrativa.jpg",
+    "hoverImage": "/Admin 2.jpg",
+    "repo": "https://github.com/BrandonJafeth/Nuestra-Senora-Del-Rosario-Frontend",
+    "tags": [
+      {
+        "name": "React",
+        "url": "https://react.dev"
+      },
+      {
+        "name": "Node.js",
+        "url": "https://nodejs.org/en"
+      },
+      {
+        "name": "C#",
+        "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+      },
+      {
+        "name": "MySQL",
+        "url": "https://www.mysql.com/"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Course Manage",
+    "description": "This project is a web application designed for course management. It allows users to create and manage courses.",
+    "image": "/Course.jpg",
+    "hoverImage": "/AddCourse.jpg",
+    "link": "https://courses-manage2.vercel.app/",
+    "repo": "https://github.com/BrandonJafeth/Courses-Manage",
+    "tags": [
+      {
+        "name": "React",
+        "url": "https://react.dev"
+      },
+      {
+        "name": "Node.js",
+        "url": "https://nodejs.org/en"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Meta Gym",
+    "description": "Meta Gym is a landing page developed as a university project to present an integrated management software for gyms.",
+    "image": "/metagym.png",
+    "hoverImage": "/metagymprice.png",
+    "link": "https://meta-gym-landing.vercel.app/",
+    "repo": "https://github.com/BrandonJafeth/meta-gym-landing",
+    "tags": [
+      {
+        "name": "Next.js",
+        "url": "https://nextjs.org"
+      },
+      {
+        "name": "React",
+        "url": "https://react.dev"
+      },
+      {
+        "name": "Firebase",
+        "url": "https://firebase.google.com/"
+      },
+      {
+        "name": "Astro",
+        "url": "https://astro.build/"
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "https://tailwindcss.com/"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Gadea Fotografía",
+    "description": "Gadea Fotografía is a website created for a professional photography business focused on capturing unforgettable moments.",
+    "image": "/gadeaiso.png",
+    "hoverImage": "/gadeaisopt.png",
+    "link": "https://www.gadeafotografia.com/",
+    "repo": "https://github.com/BrandonJafeth/landing-photography",
+    "tags": [
+      {
+        "name": "Next.js",
+        "url": "https://nextjs.org"
+      },
+      {
+        "name": "React",
+        "url": "https://react.dev"
+      },
+      {
+        "name": "Astro",
+        "url": "https://astro.build/"
+      },
+      {
+        "name": "Supabase",
+        "url": "https://supabase.com/"
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "https://tailwindcss.com/"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Billetera Digital",
+    "description": "A digital wallet web application designed to facilitate electronic money management.",
+    "image": "/wallet.png",
+    "hoverImage": "/walletus.png",
+    "link": "https://wallet.xerro.tech/xerro/r/crcwebsites/billetera-digital/home?session=9933895807125",
+    "tags": [
+      {
+        "name": "HTML",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      },
+      {
+        "name": "CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        "name": "Oracle APEX",
+        "url": "https://apex.oracle.com/"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Calculadora de Metas",
+    "description": "Web application for retail stores to calculate individual sales goals based on general targets.",
+    "image": "/calcular-metas.png",
+    "hoverImage": "/calcular-metas.png",
+    "link": "https://calcular-metas.vercel.app/",
+    "repo": "https://github.com/BrandonJafeth/Calcular-Metas",
+    "tags": [
+      {
+        "name": "React",
+        "url": "https://react.dev"
+      },
+      {
+        "name": "TypeScript",
+        "url": "https://www.typescriptlang.org/"
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "https://tailwindcss.com/"
+      },
+      {
+        "name": "Supabase",
+        "url": "https://supabase.com/"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Daniela Rodríguez - Psicóloga",
+    "description": "A professional landing page for psychology services, focusing on accessibility and clear information.",
+    "image": "/Psicologa.png",
+    "hoverImage": "/Psicologa-map.png",
+    "link": "https://www.danielarodriguezpsicologa.com/",
+    "repo": "https://github.com/BrandonJafeth/landing-psychology",
+    "tags": [
+      {
+        "name": "Astro",
+        "url": "https://astro.build/"
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "https://tailwindcss.com/"
+      },
+      {
+        "name": "TypeScript",
+        "url": "https://www.typescriptlang.org/"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "EM & Asociados",
+    "description": "Professional landing page for a law firm in Costa Rica, featuring a modern design, specialized legal service sections, and high performance using Astro.",
+    "image": "/em-asociados.png",
+    "hoverImage": "/em-asociados-hover.png",
+    "link": "https://emyasociados.net/",
+    "tags": [
+      {
+        "name": "Astro",
+        "url": "https://astro.build/"
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "https://tailwindcss.com/"
+      },
+      {
+        "name": "TypeScript",
+        "url": "https://www.typescriptlang.org/"
+      }
+    ]
+  }
+]

@@ -53,8 +53,12 @@
       "description": "Aplicación diseñada para tiendas minoristas que permite calcular y distribuir metas de ventas diarias a asesores según objetivos globales, facilitando el seguimiento de tasas y KPIs."
     },
     "project8": {
-      "title": "Servicios de Psicología",
-      "description": "Landing page profesional diseñada para presentar servicios psicológicos, con un enfoque en diseño accesible y rendimiento optimizado."
+      "title": "Daniela Rodríguez - Psicóloga",
+      "description": "Landing page profesional diseñada para presentar servicios psicológicos en Nicoya, con un enfoque en diseño accesible y rendimiento optimizado."
+    },
+    "project9": {
+      "title": "EM & Asociados",
+      "description": "Landing page profesional para un bufete de abogados en Costa Rica, con un diseño moderno, secciones de servicios legales especializados y alto rendimiento con Astro."
     },
     "project3": {
       "title": "Course Manage",

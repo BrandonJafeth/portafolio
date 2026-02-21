@@ -36,7 +36,9 @@
   "projects": {
     "title": "Selected Work",
     "demo": "Demo",
-    "repo": "Repo",    "visit": "Visit Site",    "viewProject": "View project",
+    "repo": "Repo",
+    "visit": "Visit Site",
+    "viewProject": "View project",
     "technologies": "Technologies used",
     "project1": {
       "title": "Nuestra Señora del Rosario",
@@ -51,8 +53,12 @@
       "description": "Web application designed for retail stores to calculate and distribute daily sales targets to advisors based on global goals, facilitating rate tracking and KPIs."
     },
     "project8": {
-      "title": "Psychology Services",
-      "description": "Professional landing page designed to present psychological services, focusing on accessible design and optimized performance."
+      "title": "Daniela Rodríguez - Psychologist",
+      "description": "Professional landing page designed to present psychological services in Nicoya, focusing on accessible design and optimized performance."
+    },
+    "project9": {
+      "title": "EM & Asociados",
+      "description": "Professional landing page for a law firm in Costa Rica, featuring a modern design, specialized legal service sections, and high performance using Astro."
     },
     "project3": {
       "title": "Course Manage",
