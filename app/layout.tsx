@@ -10,10 +10,12 @@ import SEOConfig from "@/config/seo.config";
 import { cookies } from "next/headers";
 import type { Language } from "@/context/language/LanguageContext";
 
+import siteConfig from "@/config/site.config";
+
 export const metadata: Metadata = {
   title: SEOConfig.title,
   description: SEOConfig.description,
-  keywords: ['web development', 'full stack', 'React', 'Next.js', 'TypeScript'],
+  keywords: siteConfig.keywords,
   openGraph: {
     type: 'website',
     locale: SEOConfig.openGraph.locale,
