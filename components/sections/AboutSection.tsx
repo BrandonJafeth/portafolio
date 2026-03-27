@@ -13,7 +13,7 @@ const AboutSection = () => {
   const { mounted } = useThemeToggle();
   const { t } = useTranslations();
 
-  const PROFILE_IMAGE = "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1768767250/_MG_1132_xdoxnx.jpg";
+  const PROFILE_IMAGE = "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1774579654/_MG_1167_2_d5mhzh.jpg";
 
   if (!mounted) return <div className="min-h-screen" />;
 

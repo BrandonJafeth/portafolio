@@ -10,14 +10,14 @@ export default function Hero() {
   const { t } = useTranslations();
 
   return (
-    <section className="relative min-h-screen flex items-start lg:items-center justify-center overflow-hidden z-10">
+    <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden z-10">
       <GravityStarsBackground 
         className="absolute inset-0 z-0 opacity-30 text-primary"
         starsCount={90}
         gravityStrength={50}
       />
       
-      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 lg:gap-20 items-center z-10 pt-24 lg:pt-0">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center z-10 pt-20 pb-24 lg:py-0">
         
         {/* Left Column: Content */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 lg:space-y-8 order-2 lg:order-1">
@@ -72,61 +72,94 @@ export default function Hero() {
             </motion.div>
         </div>
 
-        {/* Right Column: Image & Decoration */}
+        {/* Right Column: Dev-Inspired Composition */}
         <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative flex justify-center items-center order-1 lg:order-2"
         >
-            {/* Background Composition Circles matching the reference vibe */}
-            <div className="absolute inset-0 z-0">
-                 <motion.div 
-                    animate={{ scale: [1, 1.1, 1], rotate: [0, 5, 0] }}
-                    transition={{ duration: 8, repeat: Infinity }}
-                    className="absolute top-0 right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl" 
-                 />
-                 <motion.div 
-                    animate={{ scale: [1, 1.2, 1], rotate: [0, -5, 0] }}
-                    transition={{ duration: 10, repeat: Infinity, delay: 1 }}
-                    className="absolute bottom-0 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" 
-                 />
-            </div>
+            <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-[340px] md:h-[340px] lg:w-[400px] lg:h-[400px]">
 
-            <div className="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px]">
-                {/* Decorative Circles behind image */}
-                <motion.div 
-                    className="absolute -top-6 -right-6 w-32 h-32 bg-primary/20 rounded-full"
-                    animate={{ y: [0, -10, 0] }}
-                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                />
-                <motion.div 
-                    className="absolute -bottom-6 -left-6 w-24 h-24 bg-secondary rounded-full"
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                />
-                
-                {/* Main Image Mask/Container */}
-                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-background/50 ring-1 ring-border shadow-2xl">
-                    <Image
-                        src="/profile-picture.png"
-                        alt="Profile"
-                        fill
-                        className="object-cover"
-                        priority
+                {/* SVG Ring that draws itself */}
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400" fill="none">
+                    <defs>
+                        <linearGradient id="ring-gradient" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+                            <stop stopColor="#22c559" />
+                            <stop offset="0.5" stopColor="#0ea5e9" />
+                            <stop offset="1" stopColor="#a855f7" />
+                        </linearGradient>
+                    </defs>
+                    <motion.circle
+                        cx="200"
+                        cy="200"
+                        r="190"
+                        stroke="url(#ring-gradient)"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        fill="none"
+                        initial={{ pathLength: 0, opacity: 0 }}
+                        animate={{ pathLength: 1, opacity: 0.6 }}
+                        transition={{ duration: 1.8, delay: 0.5, ease: "easeInOut" }}
                     />
+                    {/* Inner dashed ring */}
+                    <motion.circle
+                        cx="200"
+                        cy="200"
+                        r="174"
+                        stroke="currentColor"
+                        strokeWidth="0.5"
+                        strokeDasharray="4 12"
+                        fill="none"
+                        className="text-border/50"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1, delay: 1.2 }}
+                    />
+                </svg>
+
+                {/* Illustration — absolutely centered */}
+                <div className="absolute inset-0 flex items-center justify-center z-10">
+                    <div className="relative w-[75%] h-[75%]">
+                        <Image
+                            src="/profile-picture.png"
+                            alt="Profile"
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </div>
                 </div>
+
+                {/* Floating dev badges — appear once with spring */}
+                {[
+                    { icon: "</>",  x: "88%", y: "18%", delay: 1.0 },
+                    { icon: "{ }",  x: "8%",  y: "75%", delay: 1.3 }
+                ].map((item, i) => (
+                    <motion.div
+                        key={i}
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: item.delay, duration: 0.5, type: "spring", stiffness: 200 }}
+                        className="absolute z-20"
+                        style={{ left: item.x, top: item.y }}
+                    >
+                        <span className="px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-mono font-bold text-xs backdrop-blur-sm">
+                            {item.icon}
+                        </span>
+                    </motion.div>
+                ))}
             </div>
         </motion.div>
 
       </div>
       
-      {/* Scroll Down Indicator - Hidden on mobile to prevent overlap */}
+      {/* Scroll Down Indicator */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden md:block"
+        className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20"
       >
         <ScrollIndicator />
       </motion.div>
