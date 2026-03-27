@@ -11,12 +11,7 @@
   },
   "nav": {
     "work": "Proyectos",
-    "about": "Sobre mí",
-    "resume": "Cv"
-  },
-  "resume": {
-    "title": "Mi Cv",
-    "download": "Descargar PDF"
+    "about": "Sobre mí"
   },
   "hero": {
     "greeting": "Hola, soy Brandon",
@@ -60,6 +55,10 @@
       "title": "EM & Asociados",
       "description": "Landing page profesional para un bufete de abogados en Costa Rica, con un diseño moderno, secciones de servicios legales especializados y alto rendimiento con Astro."
     },
+    "project10": {
+      "title": "RocaBussines",
+      "description": "Plataforma de listado de bienes raíces y vehículos con una landing page pública construida con Astro y un panel administrativo CRM desarrollado en Next.js, ambos respaldados por Supabase."
+    },
     "project3": {
       "title": "Course Manage",
       "description": "Este proyecto es una aplicación web diseñada para gestionar cursos. Permite a los usuarios crear y administrar cursos."
@@ -91,6 +90,15 @@
     "contactInfo": "Información de Contacto",
     "location": "Ubicación",
     "socials": "Redes Sociales",
+    "validation": {
+      "nameReq": "El nombre debe tener al menos 2 caracteres",
+      "nameMax": "El nombre no puede exceder 50 caracteres",
+      "emailInv": "Dirección de correo inválida",
+      "subjReq": "El asunto debe tener al menos 5 caracteres",
+      "subjMax": "El asunto no puede exceder 100 caracteres",
+      "msgReq": "El mensaje debe tener al menos 10 caracteres",
+      "msgMax": "El mensaje no puede exceder 1000 caracteres"
+    },
     "placeholders": {
       "name": "Juan Pérez",
       "email": "juan@ejemplo.com",

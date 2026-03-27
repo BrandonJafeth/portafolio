@@ -226,5 +226,35 @@
         "url": "https://www.typescriptlang.org/"
       }
     ]
+  },
+  {
+    "id": 10,
+    "title": "RocaBussines",
+    "description": "Real estate and vehicle listing platform featuring a public landing page built with Astro and a CRM admin panel powered by Next.js, both backed by Supabase for data management.",
+    "image": "/rocabussines.png",
+    "hoverImage": "/rocabussines-hover.png",
+    "link": "https://rocabussines-landing-seven.vercel.app/",
+    "tags": [
+      {
+        "name": "Astro",
+        "url": "https://astro.build/"
+      },
+      {
+        "name": "Supabase",
+        "url": "https://supabase.com/"
+      },
+      {
+        "name": "Next.js",
+        "url": "https://nextjs.org"
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "https://tailwindcss.com/"
+      },
+      {
+        "name": "TypeScript",
+        "url": "https://www.typescriptlang.org/"
+      }
+    ]
   }
 ]

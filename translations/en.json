@@ -11,12 +11,7 @@
   },
   "nav": {
     "work": "Work",
-    "about": "About",
-    "resume": "Resume"
-  },
-  "resume": {
-    "title": "My Resume",
-    "download": "Download PDF"
+    "about": "About"
   },
   "hero": {
     "greeting": "Hi, I'm Brandon",
@@ -60,6 +55,10 @@
       "title": "EM & Asociados",
       "description": "Professional landing page for a law firm in Costa Rica, featuring a modern design, specialized legal service sections, and high performance using Astro."
     },
+    "project10": {
+      "title": "RocaBussines",
+      "description": "Real estate and vehicle listing platform featuring a public landing page built with Astro and a CRM admin panel powered by Next.js, both backed by Supabase for data management."
+    },
     "project3": {
       "title": "Course Manage",
       "description": "This project is a web application designed for course management. It allows users to create and manage courses."
@@ -90,8 +89,15 @@
     "errorMessage": "Something went wrong. Please try again.",
     "contactInfo": "Contact Info",
     "location": "Location",
-    "socials": "Social Profiles",
-    "placeholders": {
+    "socials": "Social Profiles",    "validation": {
+      "nameReq": "Name must be at least 2 characters",
+      "nameMax": "Name cannot exceed 50 characters",
+      "emailInv": "Invalid email address",
+      "subjReq": "Subject must be at least 5 characters",
+      "subjMax": "Subject cannot exceed 100 characters",
+      "msgReq": "Message must be at least 10 characters",
+      "msgMax": "Message cannot exceed 1000 characters"
+    },    "placeholders": {
       "name": "John Doe",
       "email": "john@example.com",
       "subject": "Project Proposal",
