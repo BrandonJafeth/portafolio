@@ -159,8 +159,8 @@
     "id": 7,
     "title": "Calculadora de Metas",
     "description": "Web application for retail stores to calculate individual sales goals based on general targets.",
-    "image": "/calcular-metas.png",
-    "hoverImage": "/calcular-metas.png",
+    "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779812001/542shots_so_rrzc8d.jpg",
+    "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779811994/742shots_so_we2awr.jpg",
     "link": "https://calcular-metas.vercel.app/",
     "repo": "https://github.com/BrandonJafeth/Calcular-Metas",
     "tags": [
