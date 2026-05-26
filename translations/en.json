@@ -13,86 +13,82 @@
     "work": "Work",
     "about": "About"
   },
-  "experience": {
-    "item1": {
-      "position": "Full Stack Developer (Freelance)",
-      "company": "Freelance",
-      "location": "Remote",
-      "period": "2023 – Present",
-      "description": "• Implemented a CRM for managing photographic content using Supabase (PostgreSQL), centralizing data administration and improving traceability.\n• Designed an administrative management system in SQL Server under 3FN normalization, improving financial and organizational control.\n• Developed a sales and ticket registration system with React and Supabase, automating Excel-based processes and reducing operational time and errors.\n• Implemented ETL processes from Excel to databases using SQL and Power Query, automating data loading, cleaning and transformation.\n• Built administrative dashboards integrating database and Excel data, improving visibility and analysis for decision making.\n• Integrated APIs for data synchronization, automating flows and improving information consistency."
-    },
-    "item2": {
-      "position": "Full Stack Developer / Oracle APEX Developer",
-      "company": "CRCCODING",
-      "location": "Heredia, Costa Rica",
-      "period": "Jul 2025 – Nov 2025",
-      "description": "• Built a responsive digital wallet landing page using Excalidraw, Figma, HTML, and CSS, improving navigation clarity, service communication, and the overall presentation of the product for potential users.\n• Improved Oracle APEX interfaces using HTML, CSS, and functional enhancements, increasing readability, visual consistency, and usability across internal business workflows.\n• Implemented PL/SQL validations and automations in Oracle Database, improving data consistency across multi-company processes.\n• Built an ETL module for bulk Excel imports, reducing manual workload and accelerating academic data processing.",
-      "locationNote": "Heredia"
-    },
-    "item3": {
-      "position": "Full Stack Developer",
-      "company": "Nuestra Señora del Rosario",
-      "location": "Santa Cruz, Guanacaste",
-      "period": "Mar 2024 – Jun 2025",
-      "description": "• Built the administrative frontend using React and Vite, converting complex internal processes into clearer workflows for non-technical staff, which improved day-to-day usability and supported faster system adoption.\n• Designed and developed the institution’s landing page using responsive layouts and accessible content structures, improving how services were presented online and making information easier for users to understand and access.\n• Implemented a frontend architecture based on Atomic Design and reusable components, improving visual consistency, code maintainability, and long-term scalability.\n• Developed data-fetching and validation flows using TanStack Query, Axios, and Zod, reducing form errors and improving reliability in critical administrative processes.\n• Integrated frontend workflows with C# .NET and MySQL services under layered architecture and Repository patterns, improving data consistency, system stability, and compliance with business rules across critical processes.\n• Automated end-to-end testing with Cypress for critical workflows, reducing regression risk and increasing confidence in production releases.",
-      "locationNote": "Santa Cruz, Guanacaste"
-    }
+  "hero": {
+    "greeting": "Hi, I'm Brandon",
+    "introduction": "I build modern web applications focused on performance and usability. I turn ideas into fast, accessible interfaces.",
+    "available": "Available for new projects"
   },
+  "about": {
+    "role": "Full Stack Developer",
+    "languages": "Languages",
+    "skills": "Skills & Technologies",
+    "education": "Education",
+    "experience": "Work Experience",
+    "location": "Based in Costa Rica",
+    "summary": "I design and build web applications with an emphasis on clean code, reusability and performance.",
+    "longDescription": "I specialize in creating scalable web applications using modern frameworks and best practices. I enjoy solving problems and shipping polished user experiences."
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "demo": "Demo",
+    "repo": "Repository",
+    "visit": "Visit Site",
+    "liveExperience": "Live Demo",
+    "caseStudy": "Portfolio Case Study",
+    "viewProject": "View project",
+    "technologies": "Technologies used",
+    "project1": {
       "title": "Nuestra Señora del Rosario",
-      "description": "I developed a complete informational website for the Santa Cruz Nursing Home, collaborating with my classmates in the engineering course working on the frontend and backend."
+      "description": "Informational website for the Santa Cruz Nursing Home, created as a collaborative engineering course project covering frontend and backend work."
     },
     "project2": {
-      "title": "Nuestra Señora Del Rosario - Admin",
-      "description": "This repository contains the frontend code for the Santa Cruz Nursing Home project. It's a responsive web application built with modern technologies to provide information about the nursing home services."
-    },
-    "project7": {
-      "title": "Commercial Goals Calculator",
-      "description": "Web application designed for retail stores to calculate and distribute daily sales targets to advisors based on global goals, facilitating rate tracking and KPIs."
-    },
-    "project8": {
-      "title": "Daniela Rodríguez - Psychologist",
-      "description": "Professional landing page designed to present psychological services in Nicoya, focusing on accessible design and optimized performance."
-    },
-    "project9": {
-      "title": "EM & Asociados",
-      "description": "Professional landing page for a law firm in Costa Rica, featuring a modern design, specialized legal service sections, and high performance using Astro."
-    },
-    "project10": {
-      "title": "RocaBussines",
-      "description": "Real estate and vehicle listing platform featuring a public landing page built with Astro and a CRM admin panel powered by Next.js, both backed by Supabase for data management."
-    },
-    "project11": {
-      "title": "Jireh Adventure",
-      "description": "Optimized landing page created to attract customers and showcase tourism adventure services. Built with Astro, focused on speed, performance, and conversion."
-    },
-    "project12": {
-      "title": "One Out Solutions",
-      "description": "Landing page built to sell web solutions and digital services, including web development, consulting, and client acquisition."
-    },
-    "project13": {
-      "title": "One Out Creative",
-      "description": "Landing page for audiovisual services, marketing, web systems, design, and branding. Built to convert and showcase the brand portfolio."
+      "title": "Course Manage",
+      "description": "A web app for course management that allows creating and administering courses."
     },
     "project3": {
-      "title": "Course Manage",
-      "description": "This project is a web application designed for course management. It allows users to create and manage courses."
+      "title": "Meta Gym",
+      "description": "Landing page developed as a university project to present an integrated management software for gyms."
     },
     "project4": {
-      "title": "Meta Gym",
-      "description": "Meta Gym is a landing page developed as a university project to present an integrated management software for gyms. It presents the solution's benefits, functionalities, and plans clearly."
+      "title": "Gadea Photography",
+      "description": "A professional photography website focused on showcasing services and portfolios."
     },
     "project5": {
-      "title": "Gadea Fotografía",
-      "description": "A professional photography business website focused on capturing unforgettable moments and showcasing services for various clients and events."
+      "title": "Digital Wallet",
+      "description": "A digital wallet web application for managing electronic money, enabling secure transactions and balance management."
     },
     "project6": {
-      "title": "Digital Wallet",
-      "description": "A digital wallet web application for electronic money management, enabling users to perform secure operations, view transactions, and manage balances."
+      "title": "Commercial Goals Calculator",
+      "description": "Web application designed for retail stores to calculate and distribute daily sales targets to advisors, facilitating KPI tracking."
+    },
+    "project7": {
+      "title": "Daniela Rodríguez - Psychologist",
+      "description": "Professional landing page to present psychological services in Nicoya, focused on accessible design and performance."
+    },
+    "project8": {
+      "title": "EM & Asociados",
+      "description": "Professional landing page for a law firm in Costa Rica, with a modern design and specialized service sections."
+    },
+    "project9": {
+      "title": "RocaBussines",
+      "description": "Real estate and vehicle listing platform with a public landing page (Astro) and a CRM admin panel (Next.js), both backed by Supabase."
+    },
+    "project10": {
+      "title": "Jireh Adventure",
+      "description": "Optimized landing page created to attract customers and showcase tourism adventure services. Built focusing on speed and conversion."
+    },
+    "project11": {
+      "title": "One Out Solutions",
+      "description": "Landing page for selling web solutions and digital services: development, consulting and client acquisition."
+    },
+    "project12": {
+      "title": "One Out Creative",
+      "description": "Landing page for audiovisual services, marketing, web systems, design and branding, built to showcase the portfolio."
     }
   },
   "contact": {
     "title": "Contact Me",
-    "collaborationMessage": "Download my resume or reach out to discuss collaboration opportunities.",
+    "collaborationMessage": "Reach out to discuss collaboration opportunities.",
     "name": "Name",
     "email": "Email",
     "subject": "Subject",
@@ -103,7 +99,8 @@
     "errorMessage": "Something went wrong. Please try again.",
     "contactInfo": "Contact Info",
     "location": "Location",
-    "socials": "Social Profiles",    "validation": {
+    "socials": "Social Profiles",
+    "validation": {
       "nameReq": "Name must be at least 2 characters",
       "nameMax": "Name cannot exceed 50 characters",
       "emailInv": "Invalid email address",
@@ -111,7 +108,8 @@
       "subjMax": "Subject cannot exceed 100 characters",
       "msgReq": "Message must be at least 10 characters",
       "msgMax": "Message cannot exceed 1000 characters"
-    },    "placeholders": {
+    },
+    "placeholders": {
       "name": "John Doe",
       "email": "john@example.com",
       "subject": "Project Proposal",
@@ -136,27 +134,27 @@
   },
   "experience": {
     "item1": {
-      "position": "Frontend Developer / Oracle APEX Developer",
-      "company": "CRCCODING",
-      "location": "Heredia, Costa Rica",
-      "period": "Jul 2025 – Nov 2025",
-      "description": "• Built a responsive digital wallet landing page using Excalidraw, Figma, HTML, and CSS, improving navigation clarity, service communication, and the overall presentation of the product for potential users.\n• Improved Oracle APEX interfaces using HTML, CSS, and functional enhancements, increasing readability, visual consistency, and usability across internal business workflows.\n• Implemented PL/SQL validations and automations in Oracle Database, improving data consistency across multi-company processes.\n• Built an ETL module for bulk Excel imports, reducing manual workload and accelerating academic data processing.",
-      "locationNote": "Heredia"
-    },
-    "item2": {
-      "position": "Frontend Developer / Full Stack Developer",
-      "company": "Nuestra Señora del Rosario",
-      "location": "Santa Cruz, Guanacaste",
-      "period": "Mar 2024 – Jun 2025",
-      "description": "• Built the administrative frontend using React and Vite, converting complex internal processes into clearer workflows for non-technical staff, which improved day-to-day usability and supported faster system adoption.\n• Designed and developed the institution’s landing page using responsive layouts and accessible content structures, improving how services were presented online and making information easier for users to understand and access.\n• Implemented a frontend architecture based on Atomic Design and reusable components, improving visual consistency, code maintainability, and long-term scalability.\n• Developed data-fetching and validation flows using TanStack Query, Axios, and Zod, reducing form errors and improving reliability in critical administrative processes.\n• Integrated frontend workflows with C# .NET and MySQL services under layered architecture and Repository patterns, improving data consistency, system stability, and compliance with business rules across critical processes.\n• Automated end-to-end testing with Cypress for critical workflows, reducing regression risk and increasing confidence in production releases.",
-      "locationNote": "Santa Cruz, Guanacaste"
-    },
-    "item3": {
-      "position": "Frontend Developer (Freelance)",
+      "position": "Full Stack Developer (Freelance)",
       "company": "Freelance",
       "location": "Remote",
       "period": "2023 – Present",
-      "description": "• Implemented a CRM for managing photographic content using Supabase (PostgreSQL), centralizing data administration and improving traceability.\n• Designed an administrative management system in SQL Server under 3NF normalization, improving financial and organizational control.\n• Developed a sales and ticket registration system with React and Supabase, automating Excel-based processes and reducing operational time and errors.\n• Implemented ETL processes from Excel to databases using SQL and Power Query, automating data loading, cleaning and transformation.\n• Built administrative dashboards integrating database and Excel data, improving visibility and analysis for decision making.\n• Integrated APIs for data synchronization, automating flows and improving information consistency."
+      "description": "• Implemented a CRM for managing photographic content using Supabase (PostgreSQL), centralizing data administration and improving traceability.\n• Designed an administrative management system in SQL Server under 3FN normalization, improving financial and organizational control.\n• Developed a sales and ticket registration system with React and Supabase, automating Excel-based processes and reducing operational time and errors.\n• Implemented ETL processes from Excel to databases using SQL and Power Query, automating data loading, cleaning and transformation.\n• Built administrative dashboards integrating database and Excel data, improving visibility and analysis for decision making.\n• Integrated APIs for data synchronization, automating flows and improving information consistency."
+    },
+    "item2": {
+      "position": "Full Stack Developer / Oracle APEX Developer",
+      "company": "CRCCODING",
+      "location": "Heredia, Costa Rica",
+      "period": "Jul 2025 – Nov 2025",
+      "description": "• Built a responsive digital wallet landing page using Excalidraw, Figma, HTML, and CSS, improving navigation clarity and product presentation.\n• Improved Oracle APEX interfaces using HTML, CSS, and functional enhancements.\n• Implemented PL/SQL validations and automations in Oracle Database.\n• Built an ETL module for bulk Excel imports, reducing manual workload.",
+      "locationNote": "Heredia"
+    },
+    "item3": {
+      "position": "Full Stack Developer",
+      "company": "Nuestra Señora del Rosario",
+      "location": "Santa Cruz, Guanacaste",
+      "period": "Mar 2024 – Jun 2025",
+      "description": "• Built the administrative frontend using React and Vite, converting complex internal processes into clearer workflows for non-technical staff.\n• Designed and developed the institution’s landing page using responsive layouts and accessible content structures.\n• Implemented a frontend architecture based on Atomic Design and reusable components.\n• Developed data-fetching and validation flows using TanStack Query, Axios, and Zod.\n• Integrated frontend workflows with C# .NET and MySQL services under layered architecture and Repository patterns.\n• Automated end-to-end testing with Cypress for critical workflows.",
+      "locationNote": "Santa Cruz, Guanacaste"
     }
   },
   "languages": {

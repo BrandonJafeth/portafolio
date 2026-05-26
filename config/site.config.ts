@@ -2,7 +2,7 @@ const siteConfig = {
   baseUrl: "https://www.brandoncarrillo.dev",
   workPath: "/work",
   title: "Brandon Carrillo | Full Stack Web Developer",
-  contactEmail: "brandoncarrilloalvarez2@gmail.com",
+  contactEmail: "brandoncarrilloworks@gmail.com",
   description: "Portfolio of Brandon Carrillo, a Full Stack Software Engineer specializing in React, Next.js, Node.js, TypeScript, and modern web architectures. Building scalable and performant web applications.",
   keywords: [
     "Brandon Carrillo",

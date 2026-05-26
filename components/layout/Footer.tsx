@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="bg-background border-t border-white/10 py-12">
       <div className="max-w-screen-xl mx-auto flex items-center justify-center gap-8">
         <a
-          href="https://www.instagram.com/jb_ca_07/"
+          href="https://www.instagram.com/brandonworkss_/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"

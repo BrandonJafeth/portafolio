@@ -42,57 +42,53 @@
       "description": "Desarrollé un sitio web informativo completo para el Hogar de Ancianos de Santa Cruz, colaborando con mis compañeros de clase en el curso de ingeniería en sistemas trabajando en el frontend y backend."
     },
     "project2": {
-      "title": "Nuestra Señora Del Rosario - Admin",
-      "description": "Este repositorio contiene el código frontend para el proyecto del Hogar de Ancianos de Santa Cruz. Es un sistema web construido con tecnologías modernas para gestionar la información relacionada con el hogar de ancianos."
-    },
-    "project7": {
-      "title": "Calculadora de Metas Comerciales",
-      "description": "Aplicación diseñada para tiendas minoristas que permite calcular y distribuir metas de ventas diarias a asesores según objetivos globales, facilitando el seguimiento de tasas y KPIs."
-    },
-    "project8": {
-      "title": "Daniela Rodríguez - Psicóloga",
-      "description": "Landing page profesional diseñada para presentar servicios psicológicos en Nicoya, con un enfoque en diseño accesible y rendimiento optimizado."
-    },
-    "project9": {
-      "title": "EM & Asociados",
-      "description": "Landing page profesional para un bufete de abogados en Costa Rica, con un diseño moderno, secciones de servicios legales especializados y alto rendimiento con Astro."
-    },
-    "project10": {
-      "title": "RocaBussines",
-      "description": "Plataforma de listado de bienes raíces y vehículos con una landing page pública construida con Astro y un panel administrativo CRM desarrollado en Next.js, ambos respaldados por Supabase."
-    },
-    "project11": {
-      "title": "Jireh Adventure",
-      "description": "Landing page optimizada para atraer clientes y mostrar servicios de aventuras turísticas. Desarrollada con Astro, enfocada en rapidez, rendimiento y conversión."
-    },
-    "project12": {
-      "title": "One Out Solutions",
-      "description": "Landing page creada para vender soluciones web y servicios digitales, incluyendo desarrollo web, consultoría y captación de clientes."
-    },
-    "project13": {
-      "title": "One Out Creative",
-      "description": "Landing page para servicios audiovisuales, marketing, sistemas web, diseño y branding. Pensada para convertir y mostrar el portafolio de la marca."
-    },
-    "project3": {
       "title": "Course Manage",
       "description": "Este proyecto es una aplicación web diseñada para gestionar cursos. Permite a los usuarios crear y administrar cursos."
     },
-    "project4": {
+    "project3": {
       "title": "Meta Gym",
       "description": "Meta Gym es una página landing desarrollada como proyecto universitario, diseñada para presentar un software de gestión integral para gimnasios."
     },
-    "project5": {
+    "project4": {
       "title": "Gadea Fotografía",
       "description": "Gadea Fotografía es un sitio web creado para un negocio de fotografía profesional con enfoque en capturar momentos inolvidables."
     },
-    "project6": {
+    "project5": {
       "title": "Billetera Digital",
       "description": "Este proyecto consiste en una billetera digital web diseñada para facilitar la gestión de dinero electrónico, permitiendo a los usuarios realizar operaciones de forma rápida y segura."
+    },
+    "project6": {
+      "title": "Calculadora de Metas Comerciales",
+      "description": "Aplicación diseñada para tiendas minoristas que permite calcular y distribuir metas de ventas diarias a asesores según objetivos globales, facilitando el seguimiento de tasas y KPIs."
+    },
+    "project7": {
+      "title": "Daniela Rodríguez - Psicóloga",
+      "description": "Landing page profesional diseñada para presentar servicios psicológicos en Nicoya, con un enfoque en diseño accesible y rendimiento optimizado."
+    },
+    "project8": {
+      "title": "EM & Asociados",
+      "description": "Landing page profesional para un bufete de abogados en Costa Rica, con un diseño moderno, secciones de servicios legales especializados y alto rendimiento con Astro."
+    },
+    "project9": {
+      "title": "RocaBussines",
+      "description": "Plataforma de listado de bienes raíces y vehículos con una landing page pública construida con Astro y un panel administrativo CRM desarrollado en Next.js, ambos respaldados por Supabase."
+    },
+    "project10": {
+      "title": "Jireh Adventure",
+      "description": "Landing page optimizada para atraer clientes y mostrar servicios de aventuras turísticas. Desarrollada con Astro, enfocada en rapidez, rendimiento y conversión."
+    },
+    "project11": {
+      "title": "One Out Solutions",
+      "description": "Landing para vender soluciones web y servicios digitales: desarrollo web, consultoría y captación de clientes."
+    },
+    "project12": {
+      "title": "One Out Creative",
+      "description": "Landing para servicios audiovisuales, marketing, sistemas web, diseño y branding. Pensada para convertir y mostrar el portafolio de la marca."
     }
   },
   "contact": {
     "title": "Contáctame",
-    "collaborationMessage": "Descarga mi currículum o contáctame para discutir oportunidades de colaboración.",
+    "collaborationMessage": "Contáctame para discutir oportunidades de colaboración.",
     "name": "Nombre",
     "email": "Correo electrónico",
     "subject": "Asunto",

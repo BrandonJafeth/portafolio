@@ -69,7 +69,7 @@ export async function POST(request: Request) {
 
     // 3. Send notification to Admin (You)
     const adminData = await resend.emails.send({
-      from: 'Brandon Carrillo <info@brandoncarrillo.dev>', 
+      from: 'Brandon Carrillo <brandoncarrilloworks@gmail.com>', 
       to: [siteConfig.contactEmail], 
       subject: `Portfolio Contact: ${subject}`,
       react: ContactTemplate({ name, email, subject, message }),
@@ -83,7 +83,7 @@ export async function POST(request: Request) {
 
     // 4. Send confirmation to the User (Sender)
     const userData = await resend.emails.send({
-      from: 'Brandon Carrillo <info@brandoncarrillo.dev>',
+      from: 'Brandon Carrillo <brandoncarrilloworks@gmail.com>',
       to: [email],
       subject: "I've received your message - Brandon Carrillo",
       react: ConfirmationTemplate({ name }),
