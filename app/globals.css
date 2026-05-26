@@ -54,7 +54,7 @@ body * {
   transition: color var(--transition-duration) ease,
               background-color var(--transition-duration) ease,
               border-color var(--transition-duration) ease,
-              transform var(--transition-duration) ease;
+              box-shadow var(--transition-duration) ease;
 }
 
 /* Desactivar transiciones para propiedades que puedan causar retrasos */

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
@@ -26,10 +25,7 @@ export const ProjectCard = ({ project, t }: ProjectCardProps) => {
   const hasRepo = Boolean(project.repo);
 
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+    <article
       className="group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-border/60 bg-background/80 shadow-[0_20px_60px_-28px_rgba(0,0,0,0.45)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_26px_70px_-24px_rgba(0,0,0,0.55)]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -164,6 +160,6 @@ export const ProjectCard = ({ project, t }: ProjectCardProps) => {
           </div>
         </div>
       </div>
-    </motion.article>
+    </article>
   );
 };

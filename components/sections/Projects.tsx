@@ -6,6 +6,30 @@ import { useTranslations } from "@/hooks/useTranslations";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { Project } from "@/types/project";
 
+const sectionVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.14,
+      delayChildren: 0.08,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 24, filter: "blur(6px)" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
 export default function Projects() {
   const { t, isLoading } = useTranslations();
 
@@ -27,6 +51,7 @@ export default function Projects() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         className="mb-12 sm:mb-16 max-w-3xl"
       >
         <div className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/70 px-4 py-1 text-xs font-medium uppercase tracking-[0.3em] text-muted-foreground backdrop-blur-md">
@@ -46,14 +71,18 @@ export default function Projects() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-8">
-        {projectsData.slice().reverse().map((project, index) => (
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-8"
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.18 }}
+      >
+        {projectsData.slice().reverse().map((project) => (
           <motion.div
             key={project.id}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.55, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+            variants={itemVariants}
+            className="h-full"
           >
             <ProjectCard
               project={getTranslatedProject(project as Project)}
@@ -71,7 +100,7 @@ export default function Projects() {
             />
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }
