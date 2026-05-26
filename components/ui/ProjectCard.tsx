@@ -20,13 +20,12 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ project, t }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
-  const displayImage = isHovered && project.hoverImage ? project.hoverImage : project.image;
   const hasLiveLink = Boolean(project.link);
   const hasRepo = Boolean(project.repo);
 
   return (
     <article
-      className="group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-border/60 bg-background/95 shadow-[0_12px_30px_-18px_rgba(0,0,0,0.35)] transition-all duration-300 sm:bg-background/80 sm:backdrop-blur-xl sm:shadow-[0_20px_60px_-28px_rgba(0,0,0,0.45)] sm:hover:-translate-y-1 sm:hover:shadow-[0_26px_70px_-24px_rgba(0,0,0,0.55)]"
+      className="group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-border/60 bg-background/95 shadow-[0_12px_30px_-18px_rgba(0,0,0,0.35)] transition-all duration-500 sm:bg-background/80 sm:backdrop-blur-xl sm:shadow-[0_20px_60px_-28px_rgba(0,0,0,0.45)] sm:hover:-translate-y-0.5 sm:hover:shadow-[0_26px_70px_-24px_rgba(0,0,0,0.55)]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -38,17 +37,29 @@ export const ProjectCard = ({ project, t }: ProjectCardProps) => {
           aria-label={`Open ${project.title}`}
         >
           <Image
-            src={displayImage}
+            src={project.image}
             alt={project.title}
             fill
-            className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+            className="object-cover object-top transition-all duration-700 ease-out group-hover:scale-[1.02]"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/78 via-black/18 to-transparent" />
+          {project.hoverImage && (
+            <Image
+              src={project.hoverImage}
+              alt={`${project.title} preview`}
+              fill
+              className={`object-cover object-top transition-all duration-700 ease-out ${
+                isHovered ? "opacity-100 scale-[1.02]" : "opacity-0 scale-100"
+              }`}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          )}
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black/72 via-black/18 to-transparent transition-opacity duration-700" />
 
           {hasLiveLink && (
-            <div className="absolute bottom-4 left-4 right-4 z-20 flex items-center justify-between gap-3">
+            <div className="absolute bottom-4 left-4 right-4 z-20 flex items-center justify-between gap-3 opacity-95 transition-all duration-700">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/60 px-3 py-2 text-xs font-medium text-white/95 shadow-lg backdrop-blur-md">
                 <AiOutlineLink size={15} />
                 {t?.visit || "Visit Site"}
