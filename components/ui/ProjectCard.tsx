@@ -14,6 +14,8 @@ interface ProjectCardProps {
     demo?: string;
     repo?: string;
     visit?: string;
+    liveExperience?: string;
+    caseStudy?: string;
   };
 }
 
@@ -147,7 +149,9 @@ export const ProjectCard = ({ project, t }: ProjectCardProps) => {
 
           <div className="flex items-center justify-between gap-3 border-t border-border/60 pt-4">
             <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">
-              {hasLiveLink ? "Live experience" : "Portfolio case study"}
+              {hasLiveLink
+                ? t?.liveExperience || "Live experience"
+                : t?.caseStudy || "Portfolio case study"}
             </p>
 
             <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">

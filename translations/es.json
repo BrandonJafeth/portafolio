@@ -33,6 +33,8 @@
     "demo": "Demo",
     "repo": "Repositorio",
     "visit": "Visitar Sitio",
+    "liveExperience": "Experiencia en vivo",
+    "caseStudy": "Caso de estudio del portafolio",
     "viewProject": "Ver proyecto",
     "technologies": "Tecnologías utilizadas",
     "project1": {
@@ -58,6 +60,18 @@
     "project10": {
       "title": "RocaBussines",
       "description": "Plataforma de listado de bienes raíces y vehículos con una landing page pública construida con Astro y un panel administrativo CRM desarrollado en Next.js, ambos respaldados por Supabase."
+    },
+    "project11": {
+      "title": "Jireh Adventure",
+      "description": "Landing page optimizada para atraer clientes y mostrar servicios de aventuras turísticas. Desarrollada con Astro, enfocada en rapidez, rendimiento y conversión."
+    },
+    "project12": {
+      "title": "One Out Solutions",
+      "description": "Landing page creada para vender soluciones web y servicios digitales, incluyendo desarrollo web, consultoría y captación de clientes."
+    },
+    "project13": {
+      "title": "One Out Creative",
+      "description": "Landing page para servicios audiovisuales, marketing, sistemas web, diseño y branding. Pensada para convertir y mostrar el portafolio de la marca."
     },
     "project3": {
       "title": "Course Manage",

@@ -61,6 +61,12 @@ export default function Projects() {
                 demo: isLoading ? "Demo" : t("projects.demo", "Demo"),
                 repo: isLoading ? "Repo" : t("projects.repo", "Repo"),
                 visit: isLoading ? "Visit Site" : t("projects.visit", "Visit Site"),
+                liveExperience: isLoading
+                  ? "Live experience"
+                  : t("projects.liveExperience", "Live experience"),
+                caseStudy: isLoading
+                  ? "Portfolio case study"
+                  : t("projects.caseStudy", "Portfolio case study"),
               }}
             />
           </motion.div>
