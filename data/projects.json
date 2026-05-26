@@ -186,8 +186,8 @@
     "id": 8,
     "title": "Daniela Rodríguez - Psicóloga",
     "description": "A professional landing page for psychology services, focusing on accessibility and clear information.",
-    "image": "/Psicologa.png",
-    "hoverImage": "/Psicologa-map.png",
+    "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1777509920/557shots_so_wyoexl.jpg",
+    "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1777509919/862shots_so_xmhuhv.jpg",
     "link": "https://www.danielarodriguezpsicologa.com/",
     "repo": "https://github.com/BrandonJafeth/landing-psychology",
     "tags": [
@@ -209,8 +209,8 @@
     "id": 9,
     "title": "EM & Asociados",
     "description": "Professional landing page for a law firm in Costa Rica, featuring a modern design, specialized legal service sections, and high performance using Astro.",
-    "image": "/em-asociados.png",
-    "hoverImage": "/em-asociados-hover.png",
+    "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1777508166/344shots_so_elkwfc.jpg",
+    "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1777508165/207shots_so_qeytx7.jpg",
     "link": "https://emyasociados.net/",
     "tags": [
       {
