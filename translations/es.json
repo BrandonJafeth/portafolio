@@ -19,7 +19,7 @@
     "available": "Disponible para nuevos proyectos"
   },
   "about": {
-    "role": "Desarrollador Full Stack | Entusiasta Web",
+    "role": "Desarrollador Frontend / Desarrollador Full Stack",
     "languages": "Idiomas",
     "skills": "Habilidades y Tecnologías",
     "education": "Educación",
@@ -138,18 +138,25 @@
   },
   "experience": {
     "item1": {
-      "position": "Desarrollador Full Stack",
-      "company": "Nuestra Señora del Rosario",
-      "location": "Santa Cruz, Costa Rica",
-      "period": " Marzo 2024 - Junio 2025",
-      "description": "Desarrollamos con mi equipo de trabajo un sitio web informativo y un sistema administrativo completo para el Hogar de Ancianos de Santa Cruz, trabajando tanto en componentes frontend como backend, para brindarles una solución integral."
+      "position": "Desarrollador Full Stack (Freelance)",
+      "company": "Freelance",
+      "location": "Remoto",
+      "period": "2023 – Presente",
+      "description": "• Implementé un CRM para gestión de contenido fotográfico utilizando Supabase (PostgreSQL), centralizando la administración de datos y mejorando la trazabilidad de la información.\n• Diseñé un sistema de gestión administrativa en SQL Server bajo normalización 3FN, mejorando el control financiero y organizacional.\n• Desarrollé un sistema de registro de ventas y tickets con React y Supabase, automatizando procesos manuales en Excel y reduciendo tiempos operativos y errores.\n• Implementé procesos ETL desde Excel hacia bases de datos utilizando SQL y Power Query, automatizando la carga, limpieza y transformación de datos.\n• Desarrollé dashboards administrativos integrando datos de bases de datos y Excel, mejorando la visibilidad y análisis para la toma de decisiones.\n• Integré APIs para sincronización de datos, automatizando flujos y mejorando la consistencia de la información."
     },
     "item2": {
-      "position": "Pasante de Desarrollo",
+      "position": "Desarrollador Full Stack / Oracle APEX Developer",
       "company": "CRCCODING",
       "location": "Heredia, Costa Rica",
       "period": "Julio 2025 – Noviembre 2025",
-      "description": "Co-desarrollé un sistema de gestión educativa multiempresa en Oracle APEX, implementando módulos de carga masiva y procedimientos PL/SQL. Además, diseñé interfaces responsivas para una billetera digital."
+      "description": "• Construí una landing page responsiva para billetera digital usando Excalidraw, Figma, HTML y CSS, mejorando la claridad de navegación, la comunicación del servicio y la presentación del producto para usuarios potenciales.\n• Mejoré interfaces en Oracle APEX usando HTML, CSS y mejoras funcionales, aumentando la legibilidad, consistencia visual y usabilidad en flujos internos.\n• Implementé validaciones y automatizaciones en PL/SQL en Oracle Database, mejorando la consistencia de datos en procesos multiempresa.\n• Desarrollé un módulo ETL para importaciones masivas desde Excel, reduciendo la carga manual y acelerando el procesamiento académico de datos."
+    },
+    "item3": {
+      "position": "Desarrollador Full Stack",
+      "company": "Nuestra Señora del Rosario",
+      "location": "Santa Cruz, Guanacaste, Costa Rica",
+      "period": "Mar 2024 – Jun 2025",
+      "description": "• Construí el frontend administrativo utilizando React y Vite, convirtiendo procesos internos complejos en flujos de trabajo más claros para el personal no técnico, lo que mejoró la usabilidad diaria y facilitó una adopción más rápida del sistema.\n• Diseñé y desarrollé la landing page de la institución usando diseños responsivos y estructuras de contenido accesibles, mejorando la presentación de los servicios en línea y facilitando el acceso a la información.\n• Implementé una arquitectura frontend basada en Atomic Design y componentes reutilizables, mejorando la consistencia visual, la mantenibilidad del código y la escalabilidad a largo plazo.\n• Desarrollé flujos de obtención y validación de datos usando TanStack Query, Axios y Zod, reduciendo errores en formularios y mejorando la fiabilidad en procesos administrativos críticos.\n• Integré flujos frontend con servicios en C# .NET y MySQL bajo una arquitectura en capas y patrones Repository, mejorando la consistencia de datos, la estabilidad del sistema y el cumplimiento de reglas de negocio.\n• Automatizé pruebas end-to-end con Cypress para flujos críticos, reduciendo el riesgo de regresiones y aumentando la confianza en los despliegues a producción."
     }
   },
   "languages": {

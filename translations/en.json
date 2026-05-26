@@ -13,31 +13,31 @@
     "work": "Work",
     "about": "About"
   },
-  "hero": {
-    "greeting": "Hi, I'm Brandon",
-    "introduction": "As a web developer, I'm passionate about turning ideas into impactful digital experiences. I design intuitive and adaptable interfaces, combining creativity and code to deliver natural and effective interactions.",
-    "available": "Available for new projects"
+  "experience": {
+    "item1": {
+      "position": "Full Stack Developer (Freelance)",
+      "company": "Freelance",
+      "location": "Remote",
+      "period": "2023 – Present",
+      "description": "• Implemented a CRM for managing photographic content using Supabase (PostgreSQL), centralizing data administration and improving traceability.\n• Designed an administrative management system in SQL Server under 3FN normalization, improving financial and organizational control.\n• Developed a sales and ticket registration system with React and Supabase, automating Excel-based processes and reducing operational time and errors.\n• Implemented ETL processes from Excel to databases using SQL and Power Query, automating data loading, cleaning and transformation.\n• Built administrative dashboards integrating database and Excel data, improving visibility and analysis for decision making.\n• Integrated APIs for data synchronization, automating flows and improving information consistency."
+    },
+    "item2": {
+      "position": "Full Stack Developer / Oracle APEX Developer",
+      "company": "CRCCODING",
+      "location": "Heredia, Costa Rica",
+      "period": "Jul 2025 – Nov 2025",
+      "description": "• Built a responsive digital wallet landing page using Excalidraw, Figma, HTML, and CSS, improving navigation clarity, service communication, and the overall presentation of the product for potential users.\n• Improved Oracle APEX interfaces using HTML, CSS, and functional enhancements, increasing readability, visual consistency, and usability across internal business workflows.\n• Implemented PL/SQL validations and automations in Oracle Database, improving data consistency across multi-company processes.\n• Built an ETL module for bulk Excel imports, reducing manual workload and accelerating academic data processing.",
+      "locationNote": "Heredia"
+    },
+    "item3": {
+      "position": "Full Stack Developer",
+      "company": "Nuestra Señora del Rosario",
+      "location": "Santa Cruz, Guanacaste",
+      "period": "Mar 2024 – Jun 2025",
+      "description": "• Built the administrative frontend using React and Vite, converting complex internal processes into clearer workflows for non-technical staff, which improved day-to-day usability and supported faster system adoption.\n• Designed and developed the institution’s landing page using responsive layouts and accessible content structures, improving how services were presented online and making information easier for users to understand and access.\n• Implemented a frontend architecture based on Atomic Design and reusable components, improving visual consistency, code maintainability, and long-term scalability.\n• Developed data-fetching and validation flows using TanStack Query, Axios, and Zod, reducing form errors and improving reliability in critical administrative processes.\n• Integrated frontend workflows with C# .NET and MySQL services under layered architecture and Repository patterns, improving data consistency, system stability, and compliance with business rules across critical processes.\n• Automated end-to-end testing with Cypress for critical workflows, reducing regression risk and increasing confidence in production releases.",
+      "locationNote": "Santa Cruz, Guanacaste"
+    }
   },
-  "about": {
-    "role": "Full Stack Developer | Web Enthusiast",
-    "languages": "Languages",
-    "skills": "Skills & Technologies",
-    "education": "Education",
-    "experience": "Work Experience",
-    "location": "Based in Costa Rica",
-    "summary": "In my journey as a web developer, I have discovered the power of designing interfaces that forge real connections. I specialize in building intuitive and responsive digital solutions that blend technology and design to create memorable experiences.",
-    "longDescription": "I specialize in building modern and scalable web applications, focusing on clean code and great user experiences. My journey started with a curiosity about technology and a desire to create solutions that make an impact."
-  },
-  "projects": {
-    "title": "Selected Work",
-    "demo": "Demo",
-    "repo": "Repo",
-    "visit": "Visit Site",
-    "liveExperience": "Live experience",
-    "caseStudy": "Portfolio case study",
-    "viewProject": "View project",
-    "technologies": "Technologies used",
-    "project1": {
       "title": "Nuestra Señora del Rosario",
       "description": "I developed a complete informational website for the Santa Cruz Nursing Home, collaborating with my classmates in the engineering course working on the frontend and backend."
     },
@@ -136,18 +136,27 @@
   },
   "experience": {
     "item1": {
-      "position": "Full Stack Developer",
-      "company": "Nuestra Señora del Rosario",
-      "location": "Santa Cruz, Costa Rica",
-      "period": "March 2024 - June 2025",
-      "description": "Developed a complete informational website for the Santa Cruz Nursing Home, working on both frontend and backend components."
-    },
-    "item2": {
-      "position": "Development Intern",
+      "position": "Frontend Developer / Oracle APEX Developer",
       "company": "CRCCODING",
       "location": "Heredia, Costa Rica",
-      "period": "July 2025 – November 2025",
-      "description": "Co-developed a multi-company educational management system in Oracle APEX, implementing bulk data upload modules and PL/SQL procedures. Also designed responsive interfaces for a digital wallet."
+      "period": "Jul 2025 – Nov 2025",
+      "description": "• Built a responsive digital wallet landing page using Excalidraw, Figma, HTML, and CSS, improving navigation clarity, service communication, and the overall presentation of the product for potential users.\n• Improved Oracle APEX interfaces using HTML, CSS, and functional enhancements, increasing readability, visual consistency, and usability across internal business workflows.\n• Implemented PL/SQL validations and automations in Oracle Database, improving data consistency across multi-company processes.\n• Built an ETL module for bulk Excel imports, reducing manual workload and accelerating academic data processing.",
+      "locationNote": "Heredia"
+    },
+    "item2": {
+      "position": "Frontend Developer / Full Stack Developer",
+      "company": "Nuestra Señora del Rosario",
+      "location": "Santa Cruz, Guanacaste",
+      "period": "Mar 2024 – Jun 2025",
+      "description": "• Built the administrative frontend using React and Vite, converting complex internal processes into clearer workflows for non-technical staff, which improved day-to-day usability and supported faster system adoption.\n• Designed and developed the institution’s landing page using responsive layouts and accessible content structures, improving how services were presented online and making information easier for users to understand and access.\n• Implemented a frontend architecture based on Atomic Design and reusable components, improving visual consistency, code maintainability, and long-term scalability.\n• Developed data-fetching and validation flows using TanStack Query, Axios, and Zod, reducing form errors and improving reliability in critical administrative processes.\n• Integrated frontend workflows with C# .NET and MySQL services under layered architecture and Repository patterns, improving data consistency, system stability, and compliance with business rules across critical processes.\n• Automated end-to-end testing with Cypress for critical workflows, reducing regression risk and increasing confidence in production releases.",
+      "locationNote": "Santa Cruz, Guanacaste"
+    },
+    "item3": {
+      "position": "Frontend Developer (Freelance)",
+      "company": "Freelance",
+      "location": "Remote",
+      "period": "2023 – Present",
+      "description": "• Implemented a CRM for managing photographic content using Supabase (PostgreSQL), centralizing data administration and improving traceability.\n• Designed an administrative management system in SQL Server under 3NF normalization, improving financial and organizational control.\n• Developed a sales and ticket registration system with React and Supabase, automating Excel-based processes and reducing operational time and errors.\n• Implemented ETL processes from Excel to databases using SQL and Power Query, automating data loading, cleaning and transformation.\n• Built administrative dashboards integrating database and Excel data, improving visibility and analysis for decision making.\n• Integrated APIs for data synchronization, automating flows and improving information consistency."
     }
   },
   "languages": {

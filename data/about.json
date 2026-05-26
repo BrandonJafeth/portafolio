@@ -1,66 +1,25 @@
 {
   "name": "Brandon Carrillo",
-  "introduction": "As a web developer, I'm passionate about turning ideas into impactful digital experiences. I design intuitive and adaptable interfaces, combining creativity and code to deliver natural and effective interactions.",
-  "summary": "In my journey as a web development student, I have discovered the power of designing interfaces that forge real connections. I specialize in building intuitive and responsive digital solutions that blend technology and design to create memorable experiences.",
-  "longDescription": "I specialize in building modern and scalable web applications, focusing on clean code and great user experiences. My journey started with a curiosity about technology and a desire to create solutions that make an impact.",
-  "location": "Based in Costa Rica",
-  "contactEmail": "brandoncarrilloalvarez2@gmail.com",
-  "role": "Full Stack Developer | Web Enthusiast",
-  "skills": [
-    {
-      "name": "React",
-      "url": "https://react.dev"
-    },
-    {
-      "name": "TypeScript",
-      "url": "https://www.typescriptlang.org/"
-    },
-    {
-      "name": "JavaScript",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-    },
-    {
-      "name": "HTML",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
-    },
-    {
-      "name": "CSS",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-    },
-    {
-      "name": "Tailwind CSS",
-      "url": "https://tailwindcss.com/"
-    },
-    {
-      "name": "Git",
-      "url": "https://git-scm.com/"
-    },
-    {
-      "name": "C#",
-      "url": "https://dotnet.microsoft.com/en-us/languages/csharp"
-    },
-    {
-      "name": "MySQL",
-      "url": "https://www.mysql.com/"
-    },
-    {
-      "name": "SQL Server",
-      "url": "https://www.microsoft.com/en-us/sql-server"
-    },
-    {
-      "name": "Next.js",
-      "url": "https://nextjs.org"
-    },
-    {
-      "name": "NestJS",
-      "url": "https://nestjs.com/"
-    }
-  ],
+  "role": "Full Stack Developer",
+  "image": "/profile-picture.png",
   "socialLinks": {
     "github": "https://github.com/BrandonJafeth",
     "linkedin": "https://www.linkedin.com/in/brandon-carrillo-%C3%A1lvarez-13187927a/"
   },
-  "image": "/profile-picture.png",
+  "skills": [
+    { "name": "React", "url": "https://react.dev" },
+    { "name": "Next.js", "url": "https://nextjs.org" },
+    { "name": "Astro", "url": "https://astro.build/" },
+    { "name": "Tailwind CSS", "url": "https://tailwindcss.com/" },
+    { "name": "TypeScript", "url": "https://www.typescriptlang.org/" },
+    { "name": "Supabase", "url": "https://supabase.com/" },
+    { "name": "MySQL", "url": "https://www.mysql.com/" },
+    { "name": "SQL Server", "url": "https://www.microsoft.com/en-us/sql-server" }
+  ],
+  "languages": [
+    { "language": "Spanish", "proficiency": "Native" },
+    { "language": "English", "proficiency": "Basic - actively improving" }
+  ],
   "education": [
     {
       "degree": "Bachelor of Systems Engineering",
@@ -70,75 +29,57 @@
       "description": "Focused on software development, database management, and systems architecture."
     },
     {
-      "degree": "Diploma in Computer Application Programming, National University of Costa Rica, Nicoya",
+      "degree": "Diploma in Computer Application Programming",
       "institution": "Universidad Nacional de Costa Rica",
       "location": "Nicoya, Costa Rica",
-      "period": "2022- 2024",
+      "period": "2022 - 2024",
       "description": "Intensive program covering frontend and backend technologies."
     }
   ],
   "experience": [
     {
-      "position": "Full Stack Developer",
-      "company": "Nuestra Señora del Rosario",
-      "location": "Santa Cruz, Costa Rica",
-      "period": "Marzo 2024 - Junio 2025",
-      "description": "Developed a complete informational website for the Santa Cruz Nursing Home, working on both frontend and backend components.",
+      "position": "Full Stack Developer (Freelance)",
+      "company": "Freelance",
+      "location": "Remote",
+      "period": "2023 – Present",
+      "description": "Freelance frontend development focused on landing pages, CRMs and admin systems for small businesses.",
       "technologies": [
-        {
-          "name": "React",
-          "url": "https://react.dev"
-        },
-        {
-          "name": "Node.js",
-          "url": "https://nodejs.org"
-        },
-        {
-          "name": "C#",
-          "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
-        },
-        {
-          "name": "MySQL",
-          "url": "https://www.mysql.com/"
-        },
-        {
-          "name": "Tailwind CSS",
-          "url": "https://tailwindcss.com/"
-        },
-
-        {
-          
-          "name": "TypeScript",
-          "url": "https://www.typescriptlang.org/"
-        },
-        {
-          
-          "name": "React Query",
-          "url": "https://react-query-v3.tanstack.com/"
-        }
+        { "name": "Astro", "url": "https://astro.build/" },
+        { "name": "Next.js", "url": "https://nextjs.org" },
+        { "name": "Supabase", "url": "https://supabase.com/" },
+        { "name": "React", "url": "https://react.dev" },
+        { "name": "Tailwind CSS", "url": "https://tailwindcss.com/" }
       ]
     },
     {
-      "position": "Development Intern",
+      "position": "Full Stack Developer / Oracle APEX Developer",
       "company": "CRCCODING",
       "location": "Heredia, Costa Rica",
-      "period": "July 2025 – November 2025",
-      "description": "Co-developed multi-company enrollment and attendance management system in Oracle APEX.",
+      "period": "Jul 2025 – Nov 2025",
+      "description": "Built a responsive digital wallet landing page; improved Oracle APEX interfaces; implemented PL/SQL validations and built an ETL module for Excel imports.",
       "technologies": [
         { "name": "Oracle APEX", "url": "https://apex.oracle.com" },
+        { "name": "PL/SQL", "url": "https://www.oracle.com/database/technologies/appdev/plsql.html" },
         { "name": "HTML5", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML" },
         { "name": "CSS3", "url": "https://developer.mozilla.org/en-US/docs/Web/CSS" }
       ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Spanish",
-      "proficiency": "Native"
     },
     {
-      "language": "English",
-      "proficiency": "Intermediate - actively improving"
+      "position": "Full Stack Developer",
+      "company": "Nuestra Señora del Rosario",
+      "location": "Santa Cruz, Guanacaste, Costa Rica",
+      "period": "Mar 2024 – Jun 2025",
+      "description": "Built the administrative frontend using React and Vite; designed the landing page; implemented Atomic Design, TanStack Query, Axios and Zod; integrated with C# .NET and MySQL; automated E2E tests with Cypress.",
+      "technologies": [
+        { "name": "React", "url": "https://react.dev" },
+        { "name": "Vite", "url": "https://vitejs.dev/" },
+        { "name": "TanStack Query", "url": "https://tanstack.com/query" },
+        { "name": "Axios", "url": "https://axios-http.com/" },
+        { "name": "Zod", "url": "https://zod.dev/" },
+        { "name": "C#", "url": "https://dotnet.microsoft.com/en-us/languages/csharp" },
+        { "name": "MySQL", "url": "https://www.mysql.com/" },
+        { "name": "Cypress", "url": "https://www.cypress.io/" }
+      ]
     }
   ]
 }

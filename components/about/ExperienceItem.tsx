@@ -21,7 +21,23 @@ const ExperienceItem = ({
       <h3 className="font-inter text-xl font-bold text-foreground/90">{position}</h3>
       <p className="font-poppins text-base font-semibold text-primary mt-1">{company}</p> {/* Green via text-primary */}
       
-      <p className="font-poppins mt-3 text-muted-foreground leading-relaxed">{description}</p>
+      {typeof description === 'string' && (description.includes('\n') || description.includes('•')) ? (
+        <ul className="font-poppins mt-3 text-muted-foreground leading-relaxed list-disc ml-5 space-y-2">
+          {description.split(/\r?\n/).map((line, idx) => {
+            const trimmed = line.trim();
+            if (!trimmed) return null;
+            // remove leading bullet if present
+            const content = trimmed.startsWith('•') ? trimmed.replace(/^•\s?/, '') : trimmed;
+            return (
+              <li key={idx} className="text-sm">
+                {content}
+              </li>
+            );
+          })}
+        </ul>
+      ) : (
+        <p className="font-poppins mt-3 text-muted-foreground leading-relaxed">{description}</p>
+      )}
       <p className="font-poppins text-xs font-medium text-muted-foreground/60 mt-1 uppercase tracking-wider">{period} • {location}</p>
       
       {/* Tecnologías utilizadas */}

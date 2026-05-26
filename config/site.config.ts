@@ -8,7 +8,6 @@ const siteConfig = {
     "Brandon Carrillo",
     "brandoncarrillo.dev",
     "Full Stack Developer",
-    "Frontend Developer",
     "Backend Developer",
     "Software Engineer",
     "React",
