@@ -11,20 +11,19 @@ const sectionVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.14,
-      delayChildren: 0.08,
+      staggerChildren: 0.08,
+      delayChildren: 0.04,
     },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 24, filter: "blur(6px)" },
+  hidden: { opacity: 0, y: 16 },
   visible: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
     transition: {
-      duration: 0.6,
+      duration: 0.42,
       ease: [0.22, 1, 0.36, 1],
     },
   },
@@ -75,8 +74,7 @@ export default function Projects() {
         className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-8"
         variants={sectionVariants}
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.18 }}
+        animate="visible"
       >
         {projectsData.slice().reverse().map((project) => (
           <motion.div

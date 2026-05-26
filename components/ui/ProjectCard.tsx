@@ -26,7 +26,7 @@ export const ProjectCard = ({ project, t }: ProjectCardProps) => {
 
   return (
     <article
-      className="group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-border/60 bg-background/80 shadow-[0_20px_60px_-28px_rgba(0,0,0,0.45)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_26px_70px_-24px_rgba(0,0,0,0.55)]"
+      className="group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-border/60 bg-background/95 shadow-[0_12px_30px_-18px_rgba(0,0,0,0.35)] transition-all duration-300 sm:bg-background/80 sm:backdrop-blur-xl sm:shadow-[0_20px_60px_-28px_rgba(0,0,0,0.45)] sm:hover:-translate-y-1 sm:hover:shadow-[0_26px_70px_-24px_rgba(0,0,0,0.55)]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
