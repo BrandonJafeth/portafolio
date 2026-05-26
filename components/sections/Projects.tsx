@@ -34,7 +34,7 @@ export default function Projects() {
         </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
-        {projectsData.map((project, index) => (
+        {projectsData.slice().reverse().map((project, index) => (
           <motion.div
             key={project.id}
             initial={{ opacity: 0, y: 30 }}

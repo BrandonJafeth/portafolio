@@ -53,4 +53,5 @@ export const skillIcons: Record<string, React.FC<React.SVGProps<SVGSVGElement>>>
   "Firebase": Firebase,
   "Oracle APEX": Oracle,
   "PL/SQL": PLSQL,
+  "Default": ReactIcon,
 };

@@ -231,9 +231,9 @@
     "id": 10,
     "title": "RocaBussines",
     "description": "Real estate and vehicle listing platform featuring a public landing page built with Astro and a CRM admin panel powered by Next.js, both backed by Supabase for data management.",
-    "image": "/rocabussines.png",
-    "hoverImage": "/rocabussines-hover.png",
-    "link": "https://rocabussines-landing-seven.vercel.app/",
+    "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1777509455/973shots_so_vx6e5c.jpg",
+    "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1777509458/458shots_so_rjlxy7.jpg",
+    "link": "https://www.rocabusiness.net/",
     "tags": [
       {
         "name": "Astro",
@@ -254,6 +254,74 @@
       {
         "name": "TypeScript",
         "url": "https://www.typescriptlang.org/"
+      }
+    ]
+  }
+  ,
+  {
+    "id": 11,
+    "title": "Jireh Adventure",
+    "description": "Landing page optimizada para atraer clientes y mostrar servicios de aventuras turísticas. Desarrollo con Astro, enfocada en rendimiento y conversión.",
+    "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1777507449/252shots_so_byfg7e.jpg",
+    "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1777507447/752shots_so_hoy6hy.jpg",
+    "link": "https://jirehadventure.com/",
+    "repo": "",
+    "tags": [
+      {
+        "name": "Astro",
+        "url": "https://astro.build/"
+      },
+      {
+        "name": "HTML",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      }
+    ]
+  }
+  ,
+  {
+    "id": 12,
+    "title": "One Out Solutions",
+    "description": "Landing para vender soluciones web y servicios digitales: desarrollo web, consultoría y captación de clientes.",
+    "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779811006/184shots_so_wswwaz.jpg",
+    "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779810988/159shots_so_caehso.jpg",
+    "link": "https://one-out-solutions.vercel.app/",
+    "repo": "",
+    "tags": [
+      {
+        "name": "Next.js",
+        "url": "https://nextjs.org"
+      },
+      {
+        "name": "React",
+        "url": "https://react.dev"
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "https://tailwindcss.com/"
+      }
+    ]
+  }
+  ,
+  {
+    "id": 13,
+    "title": "One Out Creative",
+    "description": "Landing para servicios audiovisuales, marketing, sistemas web, diseño y branding. Orientada a conversiones y presentación de portafolio.",
+    "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779810597/713shots_so_phleeq.jpg",
+    "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779810656/696shots_so_gazw6d.jpg",
+    "link": "https://oneoutcreative.brandon-carrillo-alvarez.workers.dev/",
+    "repo": "",
+    "tags": [
+      {
+        "name": "HTML",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      },
+      {
+        "name": "CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+      },
+      {
+        "name": "Branding",
+        "url": "https://en.wikipedia.org/wiki/Branding_(marketing)"
       }
     ]
   }
