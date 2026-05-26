@@ -3,8 +3,8 @@
     "id": 1,
     "title": "Nuestra Señora del Rosario",
     "description": "Desarrollé un sitio web y sistema administrativo completo para el Hogar de Ancianos de Santa Cruz, colaborando con mis compañeros de clase en el curso de ingeniería en sistemas y trabajando tanto en el frontend como en el backend.",
-    "image": "/Proyect.avif",
-    "hoverImage": "/Voluntariado.jpg",
+    "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779814196/423shots_so_s2sroz.jpg",
+    "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779814260/782shots_so_d3n9yr.jpg",
     "link": "https://nuestrasenorainformativo.com/",
     "repo": "https://github.com/BrandonJafeth/Nuestra-Senora-Del-Rosario-Frontend",
     "tags": [
@@ -32,7 +32,7 @@
     "title": "Course Manage",
     "description": "This project is a web application designed for course management. It allows users to create and manage courses.",
     "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779813892/202shots_so_knunpc.jpg",
-    "hoverImage": "/AddCourse.jpg",
+    "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779813988/922shots_so_xfo577.jpg",
     "link": "https://courses-manage2.vercel.app/",
     "repo": "https://github.com/BrandonJafeth/Courses-Manage",
     "tags": [
