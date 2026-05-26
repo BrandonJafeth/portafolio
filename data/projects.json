@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Nuestra Señora del Rosario",
-    "description": "I developed a complete informational website for the Santa Cruz Nursing Home, collaborating with my classmates in the engineering course working on the frontend and backend.",
+    "description": "Desarrollé un sitio web y sistema administrativo completo para el Hogar de Ancianos de Santa Cruz, colaborando con mis compañeros de clase en el curso de ingeniería en sistemas y trabajando tanto en el frontend como en el backend.",
     "image": "/Proyect.avif",
     "hoverImage": "/Voluntariado.jpg",
     "link": "https://nuestrasenorainformativo.com/",
@@ -31,7 +31,7 @@
     "id": 2,
     "title": "Course Manage",
     "description": "This project is a web application designed for course management. It allows users to create and manage courses.",
-    "image": "/Course.jpg",
+    "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779813892/202shots_so_knunpc.jpg",
     "hoverImage": "/AddCourse.jpg",
     "link": "https://courses-manage2.vercel.app/",
     "repo": "https://github.com/BrandonJafeth/Courses-Manage",
