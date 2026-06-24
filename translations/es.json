@@ -84,6 +84,10 @@
     "project12": {
       "title": "One Out Creative",
       "description": "Landing para servicios audiovisuales, marketing, sistemas web, diseño y branding. Pensada para convertir y mostrar el portafolio de la marca."
+    },
+    "project13": {
+      "title": "Librería F. Chagui",
+      "description": "Solución full-stack para librería local en San José, Hatillo. Sitio web público en Astro para visibilidad en línea, y panel CRM en Next.js para gestionar categorías, productos, reseñas y usuarios — respaldado por Supabase."
     }
   },
   "contact": {

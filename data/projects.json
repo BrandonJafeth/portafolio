@@ -263,7 +263,7 @@
     "description": "Landing para vender soluciones web y servicios digitales: desarrollo web, consultoría y captación de clientes.",
     "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779811006/184shots_so_wswwaz.jpg",
     "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779810988/159shots_so_caehso.jpg",
-    "link": "https://one-out-solutions.vercel.app/",
+    "link": "https://solutions.oneoutcr.net/",
     "repo": "",
     "tags": [
     {
@@ -287,12 +287,44 @@
     "description": "Landing para servicios audiovisuales, marketing, sistemas web, diseño y branding. Orientada a conversiones y presentación de portafolio.",
     "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779810597/713shots_so_phleeq.jpg",
     "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1779810656/696shots_so_gazw6d.jpg",
-    "link": "https://oneoutcreative.brandon-carrillo-alvarez.workers.dev/",
+    "link": "https://oneoutcr.net/",
     "repo": "",
     "tags": [
- {
+      {
         "name": "Astro",
         "url": "https://astro.build/"
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "https://tailwindcss.com/"
+      },
+      {
+        "name": "TypeScript",
+        "url": "https://www.typescriptlang.org/"
+      }
+    ]
+  }
+  ,
+  {
+    "id": 13,
+    "title": "Librería F. Chagui",
+    "description": "Full-stack solution for a local bookstore in San José, Hatillo. Includes a public-facing website built with Astro to boost online visibility, and a CRM admin panel powered by Next.js for managing categories, products, reviews, and users — all backed by Supabase.",
+    "image": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1782337593/libreria-chagui_unsmhs.jpg",
+    "hoverImage": "https://res.cloudinary.com/dkwvaxxdw/image/upload/v1782338130/libreria-chagui-hover_xaikal.jpg",
+    "link": "https://libreriafchagui.com/",
+    "repo": "",
+    "tags": [
+      {
+        "name": "Astro",
+        "url": "https://astro.build/"
+      },
+      {
+        "name": "Next.js",
+        "url": "https://nextjs.org"
+      },
+      {
+        "name": "Supabase",
+        "url": "https://supabase.com/"
       },
       {
         "name": "Tailwind CSS",

@@ -84,6 +84,10 @@
     "project12": {
       "title": "One Out Creative",
       "description": "Landing page for audiovisual services, marketing, web systems, design and branding, built to showcase the portfolio."
+    },
+    "project13": {
+      "title": "Librería F. Chagui",
+      "description": "Full-stack solution for a local bookstore in San José, Hatillo. Public website built with Astro for online visibility, and a Next.js CRM admin panel for managing categories, products, reviews, and users — backed by Supabase."
     }
   },
   "contact": {
